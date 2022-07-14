@@ -1,0 +1,19 @@
+
+.bg-blue{
+    background-color: #007bff
+}
+
+.mg-15{
+    margin-left: 20;
+    margin-right: 20;
+}
+
+.jumbotron{
+    height: 100px;
+}
+
+.s-box{
+    position: relative;
+    bottom : 50px;
+}
+
