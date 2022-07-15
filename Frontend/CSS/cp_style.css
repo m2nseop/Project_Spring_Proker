@@ -10,10 +10,28 @@
 
 .jumbotron{
     height: 100px;
+    background-color: white;
+    border: 3px solid grey;
 }
 
-.s-box{
+
+.inner-box{
+    border : 2px solid grey;
+    width: 60px;
+    height: 80px;
+
     position: relative;
-    bottom : 50px;
+    bottom : 40px;
+}
+
+
+.inner-text{
+    position: relative;
+    bottom: 20px;
+    font-size: 0.8vw;
+}
+
+.p-box{
+
 }
 
