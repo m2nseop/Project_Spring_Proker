@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+
+
+
+  <script>
+
+    $(function () {
+
+      var $s_button = $('.idstatus_button');
+
+      $s_button.click(function () {
+        //alert("클릭 확인 ");
+      })
+    });
+
+  </script>
+
+  <style>
+    .idstatus_button_main {
+      width: 100px;
+      height: 100px;
+      border: 1px solid
+    }
+
+    .idstatus_button_detail{
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+    }
+
+    .idstatus{
+      width: 100px;
+      height: 33.3px;
+      border:1px solid;
+    }
+
+    .logout{
+      width: 100px;
+      height: 33.3px;
+      border:1px solid;
+
+
+    }
+
+    .member_info{
+      width: 100px;
+      height: 33.3px;
+      border: 1px solid;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <button class="idstatus_button_main"> id 표시 </button>
+
+  <div class="idstatus_button_detail">
+    <button class="idstatus"> id 표시 </button>
+    <button class="logout">로그아웃</button>
+    <button class="member_info">회원정보</button>
+  </div>
+
+</body>
+
+</html>

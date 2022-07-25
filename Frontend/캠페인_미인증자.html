@@ -35,9 +35,10 @@
 
     <input class="campaign_searchbar" type="text" placeholder="검색어 입력"></input>
 
-    <button class="email_icon">
+    <button class="email_icon" href="#" data-popup-open="example">
       <i class="fa-solid fa-square-envelope"></i>
     </button>
+   
 
     <button class="notice_icon">
       <i class="fa-solid fa-bell"></i>
@@ -48,10 +49,26 @@
   </div>
 
   <div id="sidebar">
-    <ul>
-      <li> list 1 </li>
-      <li> list 2 </li>
-      <li> list 3 </li>
+    <ul class="slist">
+      <li> BACKEND 
+        <ul>
+          <li>SERVER</li>
+          <li>DATABASE</li>
+          <li>SERVER-SIDE</li>
+          <li>MOBILE</li>
+        </ul>
+      </li>
+      <li> FRONTEND 
+        <ul>
+          <li>DESIGN
+            <ul>
+              <li>CSS</li>
+            </ul>
+          </li>
+        </ul>
+        <li>JS</li>
+      </li>
+      <li>ETC</li>
     </ul>
   </div>
 
@@ -60,19 +77,38 @@
       <div class=""> </div>
       <div class=""> </div>
 
-    </div>
+  </div>
 
-    <div class="campaign_list">
-      <div></div>
-      <div></div>
+  <div class="campaign_list">
+    <div></div>
+    <div></div>
 
+  </div>
+  </div>
+
+
+  <!-- 팝업, 슬라이드 다운 모음 -->
+
+   <!-- 표출되는 팝업 입니다. -->
+   <div class="popup" data-popup="example">
+    <div class="popup-inner">
+      <div class="popup-contents">
+        <a class="popup-close" data-popup-close="example" href="#">X</a> <!-- 팝업 닫기 버튼입니다 -->
+        문의하기
+      </div>
     </div>
+  </div>
+
+  <!-- 슬라이드 다운 입니다. -->
+
+  <div class="slide-down">
+
   </div>
 
 
 
 
-<!-- src 모음 -->
+  <!-- src 모음 -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
