@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+}
+
+/* nav메뉴 속성 모음 */
+
+.nav{
+  background-color: #4fc3f7;
+  height: 70px;
+  border: 1px solid gray;
+}
+
+.nav .home_button{
+  background-color: #4fc3f7;
+  width: 5%;
+  height: 70px;
+  border: 1px solid gray;
+  
+
+}
+
+.nav .sidemenu_button{
+  background-color: #4fc3f7;
+  width: 5%;
+  height: 70px;
+  border: 1px solid gray;
+
+
+}
+
+.nav .newcampaign_button{
+  background-color: #4fc3f7;
+  width: 10%;
+  height: 70px;
+  border: 1px solid gray;
+
+  
+
+}
+
+.nav .campaign_search{
+  width: 20%;
+  height: 70px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.nav .campaign_searchbar{
+  width: 40%;
+  height: 70px;
+  background-color: white;
+  border: 1px solid gray;
+
+  
+
+}
+
+.nav .email_icon{
+  background-color: #4fc3f7;
+  width: 5%;
+  height: 70px;
+  border: 1px solid gray;
+
+  
+
+}
+
+.nav .notice_icon{
+  background-color: #4fc3f7;
+  width: 5%;
+  height: 70px;
+  border: 1px solid gray;
+
+  
+
+}
+
+.nav .idstatus_button{
+  background-color: #4fc3f7;
+  width: 10%;
+  height: 70px;
+  border: 1px solid gray;
+
+
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dom</title>
+
+  <style>
+    #sidemenu_button{
+      
+    }
+  </style>
+
+
+  <script src="../../js/jquery.js"></script>
+  <script>
+
+    /* 다음의 방식으로 제이쿼리 사용 가능합니다 */
+
+    /*
+    
+    $(document).ready(function(){
+      $("#txt").css("color", "red");
+  
+    });
+  
+    $(function(){
+      $("h1").css("color", "red");
+    });
+  
+    $(function(){
+      $("*").css("border", "1px solid blue");
+    });
+  
+  */
+
+    /*
+    
+      $(function(){
+        $("#tit").css("background-color", "#ff0").css("border", "2px solid #f00");
+      });
+    
+    */
+
+    $(function () {
+      $(".tit").css("background-color", "#ff0").css("border", "2px solid #f00");
+    });
+
+
+    $(function(){
+
+      var $s_button = $('#sidemenu_button');
+
+      $s_button.click(function(){
+        alert("welcome");
+      })
+
+
+
+
+      
+    });
+
+
+
+    /*
+
+
+    $(function () {
+      var duration = 300;
+
+      var $side = $('#sidebar');
+      var $s_button = $('#sidemenu_button');
+
+      $s_button.click(function()){
+
+      });
+
+
+      var $sidebt = $side.find('#sidemenu_button').on('click', function () {
+        $side.toggleClass('open');
+
+        if ($side.hasClass('open')) {
+          $side.stop(true).animate({ left: '0px' }, duration);
+        } else {
+          $side.stop(true).animate({ left: '-300px' }, duration);
+          $sidebt.find('span').text('OPEN');
+        };
+      });
+    });
+
+    */
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <button id="sidemenu_button"></button>
+
+  <div id="sidebar">
+  <h1> 제이쿼리 </h1>
+  <h2 class="tit"> 선택자</h2>
+  <h3> 직접 선택자 </h3>
+  </div>
+
+</body>
+
+</html>
