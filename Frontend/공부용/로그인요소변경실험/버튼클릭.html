@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click sample</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="aaa">add Button1</button>
+    <button>add Button2</button>
+    <script>
+        $(function() {
+          /*
+            $('button').click(function() {
+                alert('버튼을 추가합니다.');
+
+                $('body').append('<button>add Button</button>');
+            });
+            */
+
+            
+
+            $('body').on('click', '.aaa', function() {
+                alert('버튼을 추가합니다.');
+
+                $('body').append('<button>add Button</button>');
+            });
+
+            
+        });
+    </script>
+</body>
+</html>

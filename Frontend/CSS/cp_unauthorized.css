@@ -1,31 +1,35 @@
 body {
   background-color: white;
+  font-family: 'Jua', sans-serif;
+
+}
+/* 아이콘 컬러 변경 */
+
+.icon_white{
+  color: white;
 }
 
 /* nav메뉴 속성 모음  - 기초 디자인 */
 
 .nav {
-  background-color: #4fc3f7;
+  color: white;
+  background-color: #007bff;
   height: 70px;
   border: 1px solid gray;
 }
 
 .nav .home_button {
-  background-color: #4fc3f7;
   width: 5%;
   height: inherit;
   border: 1px solid gray;
-
-
+  background-color: #007bff;;
 }
 
 .nav .sidemenu_button {
-  background-color: #4fc3f7;
   width: 5%;
   height: inherit;
   border: 1px solid gray;
-
-
+  background-color: #007bff;;
 }
 
 
@@ -36,8 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  background-color: #007bff;
 }
 
 .nav .campaign_searchbar {
@@ -45,23 +48,23 @@ body {
   height: inherit;
   background-color: white;
   border: 1px solid gray;
-
+  
 }
 
 
 
 .nav .email_icon {
-  background-color: #4fc3f7;
+  background-color: #007bff;
   width: 5%;
   height: inherit;
   border: 1px solid gray;
 
-
-
 }
+
+
 
 .nav .notice_icon {
-  background-color: #4fc3f7;
+  background-color: #007bff;
   width: 5%;
   height: inherit;
   border: 1px solid gray;
@@ -70,8 +73,9 @@ body {
 
 }
 
-.nav .idstatus_button {
-  background-color: #4fc3f7;
+.nav .idstatus_button_main {
+  color: white;
+  background-color: #007bff;
   width: 10%;
   height: inherit;
   border: 1px solid gray;
@@ -79,8 +83,55 @@ body {
 
 }
 
+.idstatus_button_open{
+  display: none;
+}
 
-/* nav메뉴 속성 모음 */
+.idstatus_button_detail {
+  background-color: #007bff;
+
+
+  width: 10%;
+  height: inherit;
+  margin: 0;
+  border: 1px solid gray;
+  font-size: 13px;
+
+
+}
+
+.idstatus {
+  background-color: #007bff;
+  color: white;
+
+  width: 100%;
+  height: 23.3333333333px;
+  border: 1px solid gray;
+
+}
+
+.logout {
+  background-color: #007bff;
+  color: white;
+
+  width: 100%;
+  height: 23.3333333333px;
+  border: 1px solid gray;
+
+}
+
+.member_info {
+  background-color: #007bff;
+  color: white;
+
+  width: 100%;
+  height: 23.3333333333px;
+  border: 1px solid gray;
+
+
+}
+
+
 
 /* side 메뉴 속성  */
 
@@ -89,11 +140,23 @@ body {
 #sidebar {
   background-color: gray;
   border: 1px solid gray;
+  color: white;
+
   width: 10%;
-  height: 860px;
+
+  font-size: 1vw;
+
+  height: calc(100vh - 70px);
   position: fixed;
+
   left: -10%;
   
+}
+
+.slist{
+  list-style: none;
+  position: relative;
+  right: 30px;
 }
 
 /* 이메일 버튼 팝업 css */
@@ -124,7 +187,53 @@ body {
   display: block;
   top:10px;
   right: 10px;
+  color: black;
 }
+
+.popup_detail{
+  background-color: aquamarine;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.popup_h1{
+  height: 70px;
+  line-height: 70px;
+
+}
+
+.popup_text{
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  
+}
+
+.popup_input{
+  width: 70%;
+  display: inline-block;
+
+
+}
+
+#popup_about{
+  height: 100px;
+}
+
+#popup_about_t{
+  position: relative;
+  bottom: 80px;
+}
+
+.popup_send{
+  margin-left:calc(33%);
+  margin-right:calc(33%); 
+  width: 30%;
+}
+
+
 
 /* 알림 슬라이드 다운 CSS */
 
@@ -135,5 +244,140 @@ body {
   height: 500px;
   background-color: grey;
   
+}
+
+/* --------------------------------------------------------------* /
+
+/* 메인 콘텐츠 CSS 모음 */ 
+
+main{
+  background-color: antiquewhite;
+  width: 80%;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+}
+
+main .campaign_status{
+  width: 100%;
 
 }
+
+
+main .campaign_status .slogan{
+  width: 80%;
+  background-color: aquamarine;
+  position: relative;
+  top: 10px;
+  left: 40px;
+  margin-bottom: 30px;
+}
+
+
+main .c_status_button_box_collection{
+  width: 100%;
+  background-color: blue;
+  margin-bottom: 35px;
+}
+
+
+
+
+main .c_status_button_box{
+  background-color: gray;
+  width: 20%;
+  height: 100px;
+  border: 1px solid gray;
+  display: inline-block;
+  
+  margin-left: 4%;
+
+}
+
+main .c_status_button{
+  background-color: gray;
+  color: white;
+
+  font-size: 1vw;
+  width: 60%;
+  height: inherit;
+}
+
+main .c_status_area{
+  background-color: gray;
+  color: white;
+
+  border: 0;
+  border-bottom: 1px solid gray;
+  width: 36%;
+  height: inherit;
+
+}
+
+main .campaign_list_nav{
+  background-color: aqua;
+  margin-bottom: 20px;
+}
+
+main .slogan_nav{
+  position: relative;
+  top: 10px;
+  left: 40px;
+
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 90%;
+}
+
+.change_gallery{
+  position: relative;
+  top: 10px;
+  left: 40px;
+  background-color: gray;
+
+}
+
+.change_list{
+  position: relative;
+  top: 10px;
+  left: 40px;
+  background-color: gray;
+
+}
+
+.campaign_list{
+  background-color: blueviolet;
+}
+
+
+.campaign_list_bar{
+  background-color: antiquewhite;
+  width: 95%;
+  margin: auto;
+}
+
+.campaign_list_bar_button_first{
+  margin: auto 0;
+  background-color: gray;
+  color: white;
+
+  font-size: 1vw;
+
+}
+
+.campaign_list_bar_button{
+  background-color: gray;
+  width: 10%;
+  font-size: 1vw;
+  color: white;
+
+
+}
+
+.campaign_list_table{
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  height: 21vw;
+  background-color: gray;
+}
+

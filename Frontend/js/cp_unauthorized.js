@@ -84,9 +84,31 @@ $(function () {
 });
 
 /* id 표시 관련 함수들 */
-
 $(function () {
 
-  
+  var $id_main_button = $('.idstatus_button_main');
+  var $id_detail_button = $('.idstatus_button_detail');
+  var $return_main_button = $('.idstatus');
+
+  $('body').on('click', '.idstatus_button_main', function () {
+    //alert('버튼을 세부버튼으로 변경합니다.');
+
+    $id_detail_button.toggleClass('idstatus_button_open');
+
+    $id_main_button.replaceWith($id_detail_button);
+
+  });
+
+
+  $('body').on('click', '.idstatus', function () {
+    //alert('버튼을 메인버튼으로 변경합니다.');
+
+    $id_detail_button.replaceWith($id_main_button);
+
+    $id_detail_button.toggleClass('idstatus_button_open');
+
+  });
+
+
 
 });

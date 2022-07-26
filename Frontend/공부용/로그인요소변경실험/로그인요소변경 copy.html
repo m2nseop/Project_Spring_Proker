@@ -8,21 +8,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 
 
-
-
-  <script>
-
-    $(function () {
-
-      var $s_button = $('.idstatus_button');
-
-      $s_button.click(function () {
-        //alert("클릭 확인 ");
-      })
-    });
-
-  </script>
-
   <style>
     .idstatus_button_main {
       width: 100px;
@@ -30,27 +15,29 @@
       border: 1px solid
     }
 
-    .idstatus_button_detail{
+    .idstatus_button_open{
+      display: none;
+    }
+
+    .idstatus_button_detail {
       width: 100px;
       height: 100px;
       border: 1px solid;
     }
 
-    .idstatus{
+    .idstatus {
       width: 100px;
       height: 33.3px;
-      border:1px solid;
+      border: 1px solid;
     }
 
-    .logout{
+    .logout {
       width: 100px;
       height: 33.3px;
-      border:1px solid;
-
-
+      border: 1px solid;
     }
 
-    .member_info{
+    .member_info {
       width: 100px;
       height: 33.3px;
       border: 1px solid;
@@ -64,11 +51,44 @@
 
   <button class="idstatus_button_main"> id 표시 </button>
 
-  <div class="idstatus_button_detail">
+  <div class="idstatus_button_detail idstatus_button_open">
     <button class="idstatus"> id 표시 </button>
     <button class="logout">로그아웃</button>
     <button class="member_info">회원정보</button>
   </div>
+
+  <script>
+
+    $(function () {
+
+      var $id_main_button = $('.idstatus_button_main');
+      var $id_detail_button = $('.idstatus_button_detail');
+      var $return_main_button = $('.idstatus');
+
+      $('body').on('click', '.idstatus_button_main', function () {
+        //alert('버튼을 세부버튼으로 변경합니다.');
+
+        $id_detail_button.toggleClass('idstatus_button_open');
+
+        $id_main_button.replaceWith($id_detail_button);
+
+      });
+
+
+      $('body').on('click', '.idstatus', function () {
+        //alert('버튼을 메인버튼으로 변경합니다.');
+
+        $id_detail_button.replaceWith($id_main_button);
+
+        $id_detail_button.toggleClass('idstatus_button_open');
+
+      });
+
+
+
+    });
+
+  </script>
 
 </body>
 
