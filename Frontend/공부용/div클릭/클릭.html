@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+<script>
+  function hello(){
+    alert("안녕하세요");
+  }
+</script>
+
+<style>
+
+  .lastoutbox{
+    height: 100px;
+
+  }
+  .out{
+    background-color: black;
+    width: 20%;
+    height: 100px;
+    float: left;
+  }
+  
+  .left{
+    background-color: blue;
+    height: inherit;
+    width: 40%;
+    float: left;
+  }
+
+  .right{
+    background-color: brown;
+    height: inherit;
+    width: 60%;
+    float: left;
+  }
+
+  .blank{
+    background-color: black;
+    height: inherit;
+    width: 10%;
+    float: left;
+
+  }
+</style>
+
+</head>
+
+<body>
+
+  <div class="lastoutbox">
+
+  <div class="blank">
+  </div>
+
+  
+  <div class="out" onclick="hello()">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="out" onclick="hello()">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="out" onclick="hello()">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="out" onclick="hello()">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="blank">
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>

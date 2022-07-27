@@ -1,3 +1,22 @@
+/*nav 바 기능 함수들 */
+
+$(function () {
+
+  var $cp_button = $('.campaign_plus_button');
+
+  $cp_button.click(function () {
+    //alert("클릭 확인 ");
+
+
+
+
+
+  })
+});
+
+
+
+
 /* 사이드바 기능 함수 */
 
 $(function () {
@@ -20,13 +39,19 @@ $(function () {
     if ($sidebar.hasClass('open')) {
       $sidebar.stop(true).animate({ left: '0%' }, duration);
     } else {
-      $sidebar.stop(true).animate({ left: '-10%' }, duration);
+      $sidebar.stop(true).animate({ left: '-15%' }, duration);
     };
 
 
 
   })
 });
+
+/* 캠페인 티켓 관련 함수들 */ 
+
+/* function hello(){
+  alert("안녕하세요");
+} */
 
 
 /* 이메일 팝업 열기 함수 */
@@ -84,7 +109,7 @@ $(function () {
 });
 
 /* id 표시 관련 함수들 */
-$(function () {
+/* $(function () {
 
   var $id_main_button = $('.idstatus_button_main');
   var $id_detail_button = $('.idstatus_button_detail');
@@ -111,4 +136,4 @@ $(function () {
 
 
 
-});
+}); */
