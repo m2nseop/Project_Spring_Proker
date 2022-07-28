@@ -24,7 +24,8 @@
 <body>
 
 
-  <div class="nav">  <!-- 상단 네비게이션 바 영역 시작 -->
+  <div class="nav">
+    <!-- 상단 네비게이션 바 영역 시작 -->
 
 
     <div class="nav_blank"></div>
@@ -46,7 +47,7 @@
     </buuton>
 
     <div class="campaign_searchbar_box">
-    <input class="campaign_searchbar" type="text" placeholder="캠페인 검색"></input>
+      <input class="campaign_searchbar" type="text" placeholder="캠페인 검색"></input>
     </div>
 
 
@@ -67,7 +68,7 @@
 
     <button class="idstatus_button_main"> id 표시 </button>
 
-  <!--   <div class="idstatus_button_detail idstatus_button_open">
+    <!--   <div class="idstatus_button_detail idstatus_button_open">
       <button class="idstatus"> id 표시 </button>
       <button class="logout">로그아웃</button>
       <button class="member_info">회원정보</button>
@@ -78,7 +79,7 @@
 
 
 
-  </div>    <!-- 상단 네비게이션 외부 div 박스 끝  -->
+  </div> <!-- 상단 네비게이션 외부 div 박스 끝  -->
 
 
 
@@ -100,9 +101,10 @@
             <p class="popup_text">제목</p> <input class="popup_input" type="text" placeholder="제목을 입력해주세요"></input>
           </div>
           <div class="popup_block">
-            <p class="popup_text" id="popup_about_t">내용</p> <textarea class="popup_input" id="popup_about" type="text" placeholder="문의 내용을 입력해주세요"></textarea>
+            <p class="popup_text" id="popup_about_t">내용</p> <textarea class="popup_input" id="popup_about" type="text"
+              placeholder="문의 내용을 입력해주세요"></textarea>
           </div>
-          
+
           <button class="popup_send">확인</button>
         </div>
       </div>
@@ -193,7 +195,7 @@
           <div class="c_status_number"> 0 </div>
         </div>
       </div>
-     
+
 
       <div class="c_status_blank"></div>
 
@@ -209,16 +211,19 @@
       <div class="slogan_nav"> CAMPAIGN LIST </div>
 
       <div class="campaign_list_nav_button">
-      <button class="change_gallery">
-        <i class="fa-solid fa-border-all icon_gray"></i>
-      </button>
+        <button class="change_gallery">
+          <i class="fa-solid fa-border-all icon_gray"></i>
+        </button>
       </div>
 
       <div class="campaign_list_nav_button">
-      <button class="change_list">
-        <i class="fa-solid fa-bars icon_gray"></i>
-      </button>
+        <button class="change_list">
+          <i class="fa-solid fa-bars icon_gray"></i>
+        </button>
       </div>
+
+      <div class="c_list_blank_2"></div>
+
 
     </div>
 
@@ -228,30 +233,36 @@
 
       <div class="campaign_list_bar">
 
-        <button class="campaign_list_bar_button_first">ㅁ</button>
-        <button class="campaign_list_bar_button">캠페인 상태</button>
-        <button class="campaign_list_bar_button">캠페인</button>
-        <button class="campaign_list_bar_button">캠페인 카테고리</button>
-        <button class="campaign_list_bar_button">일정</button>
-        <button class="campaign_list_bar_button">금액</button>
-        <button class="campaign_list_bar_button">조회수</button>
-        <button class="campaign_list_bar_button">캠페인 분류</button>
-        <button class="campaign_list_bar_button">신청자 수</button>
-        <button class="campaign_list_bar_button">생성일</button>
+        <div class="campaign_list_button_group">
+
+          <div class="btn-group">
+            <div class="btn-group-blank"></div>
+            <button>상태</button>
+            <button>캠페인</button>
+            <button>브랜드</button>
+            <button>일정</button>
+            <button>예산(원)</button>
+            <button>예상 총 OTS</button>
+            <button>예상 타겟 OTS</button>
+            <button>생성일</button>
+            <button id="last_button">촤종수정일</button>
+            <div class="btn-group-blank"></div>
+          </div>
+
+          
+        <div class="campaign_list_table">
+          캠페인 목록 및 데이터 노출영역
+        </div>
+
+        </div>
+
 
       </div>
 
-
-      <div class="campaign_list_table">
-        캠페인 목록 및 데이터 노출영역
-      </div>
-
-    </div>
-
-    <footer>
+      <footer>
 
 
-    </footer>
+      </footer>
 
 
 
