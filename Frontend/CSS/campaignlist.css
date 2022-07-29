@@ -1,0 +1,168 @@
+
+main .campaign_list_nav {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid gray;
+
+
+}
+
+main .c_list_blank {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+  background-color:#F6F6F6; 		
+  margin-top: 1px;
+}
+
+main .c_list_blank_2 {
+  /* background-color: black; */
+  width: 6%;
+  height: inherit;
+  float: left;
+  background-color:#F6F6F6; 		
+  margin-top: 1px;
+}
+
+/* 상단 캠페인 리스트 슬로건과 2개 버튼 영역  */
+
+main .slogan_nav {
+
+  width: 85%;
+  float: left;
+  font-size: 1vw;
+
+
+  margin-top: 20px;
+}
+
+.change_gallery {
+
+  background-color: #f8f8f8;
+  border: 0;
+
+  margin-top: 20px;
+
+
+}
+
+.change_list {
+
+  background-color: #f8f8f8;
+  border: 0;
+
+  margin-top: 20px;
+
+}
+
+.campaign_list {
+  /* background-color: blueviolet; */
+}
+
+
+.campaign_list_bar {
+  /* background-color: red; */
+  width: 100%;
+  margin: auto;
+}
+
+/* ======================================================================================================================================================== */
+
+/* 캠페인 리스트 버튼 그룹 모음 */
+
+.campaign_list_button_group {
+  width: 100%;
+}
+
+
+.btn_group {
+  width: 100%;
+  height: 50px;
+}
+
+.btn_group button {
+  background-color: #dcdcdc;
+  border: 1px solid grey;
+  color: black;
+  width: 10%;
+  height: inherit;
+  font-size: 0.65vw;
+  float: left;
+}
+
+.btn_group #last_button {
+  border-top-right-radius: 15px;
+
+}
+
+.btn_group button:not(:last-child) {
+  border-right: none;
+}
+
+
+
+.btn_group .btn-group-blank1{
+  float: left;
+  /* background-color: black; */
+  height: inherit;
+  width: 5%;
+}
+
+
+.btn_group .btn-group-blank2{
+  float: left;
+  /* background-color: black; */
+  height: inherit;
+  width: 5%;
+}
+
+
+.campaign_list_table {
+  margin: auto;
+  width: 90%;
+  height: 300px;
+  background-color: white;
+}
+
+.campaign_list_table_blank{
+  float: left;
+  /* background-color: aqua; */
+  height: 300px;
+  width: 30%;
+}
+
+.campaign_list_table_main{
+  float: left;
+  width: 40%;
+  height: 300px;
+}
+
+.campaign_list_table_main_icon{
+  height: 150px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+
+  
+}
+
+.campaign_list_table_main_text{
+  height: 150px;
+  /* background-color: red; */
+
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  color:gray;
+
+  
+}

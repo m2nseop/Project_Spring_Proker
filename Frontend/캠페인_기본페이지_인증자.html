@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="CSS/cp_unauthorized.css">
+  <!-- <link rel="stylesheet" href="CSS/all.css"> -->
+
+  <link rel="stylesheet" href="CSS/body.css">
+  <link rel="stylesheet" href="CSS/nav.css">
+  <link rel="stylesheet" href="CSS/sidebar.css">
+  <link rel="stylesheet" href="CSS/navevent.css">
+  <link rel="stylesheet" href="CSS/campaigncard.css">
+  <link rel="stylesheet" href="CSS/campaignlist.css">
+  <link rel="stylesheet" href="CSS/footernav.css">
+
+
+
+
 
   <!-- 폰트 모음 -->
 
@@ -18,7 +30,7 @@
 
 
 
-  <title> 미인증자 전용 캠페인 홈페이지 </title>
+  <title> 캠페인 페이지 _ 인증자 </title>
 </head>
 
 <body>
@@ -58,6 +70,8 @@
     </button>
 
 
+    <!-- 알림 버튼 / 클릭시 알림 창 슬라이드 다운  -->
+
     <button class="notice_icon icon_white">
       <i class="fa-solid fa-bell"></i>
     </button>
@@ -68,14 +82,59 @@
 
     <button class="idstatus_button_main"> id 표시 </button>
 
-    <!--   <div class="idstatus_button_detail idstatus_button_open">
+    <div class="idstatus_button_detail idstatus_button_open">
       <button class="idstatus"> id 표시 </button>
-      <button class="logout">로그아웃</button>
-      <button class="member_info">회원정보</button>
-    </div> -->
+      <button class="logout">회원정보</button>
+      <button class="member_info">로그아웃</button>
+    </div>
 
 
     <div class="nav_blank"></div>
+
+
+
+    <!-- 알림  슬라이드 다운 입니다. -->
+
+    <div class="slide_down">
+
+      <div class="content">
+        <div class="slide_down_headbar">
+          <div class="slide_down_headbar_text">알림</div>
+          <div class="slide_down_headbar_blank"></div>
+          <button class="slide_down_headbar_xbutton"><i class="fa-regular fa-circle-xmark"></i></button>
+        </div>
+
+        <div class="alarm_title"> 알림 타이틀 </div>
+
+        <div class="alarm_body"> 알림 바디 </div>
+
+        <div class="alarm_nav">
+          <div class="alarm_blank"></div>
+          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-regular fa-circle-down"></button></i>
+          </div>
+          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-regular fa-circle-up"></button></i>
+          </div>
+          <div class="alarm_blank"></div>
+          <div></div>
+        </div>
+
+      </div>
+
+      <div class="new">
+
+        <div class="new_body">
+          <div class="new_alarm_text">알림</div>
+          <div class="new_alarm_blank"></div>
+          <div clsss="new_alarm_button_box"><button class="new_alarm_button"><i
+                class="fa-regular fa-circle-xmark"></i></button></div>
+        </div>
+
+        <div class="new_content"> 새로운 알림이 없습니다. </div>
+
+      </div>
+
+    </div>
+
 
 
 
@@ -111,11 +170,7 @@
     </div>
   </div>
 
-  <!-- 알림  슬라이드 다운 입니다. -->
 
-  <div class="slide-down">
-
-  </div>
 
   <!-- 사이드 메뉴 입니다. -->
 
@@ -164,7 +219,7 @@
 
       <div class="c_status_blank"></div>
 
-      <div class="c_status_button_box" onclick="hello()">
+      <div class="c_status_button_box custom-btn btn-10" onclick="hello()">
         <div class="c_status_icon"><i class="fa-regular fa-pen-to-square fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">생성중인 캠페인</div>
@@ -172,7 +227,7 @@
         </div>
       </div>
 
-      <div class="c_status_button_box" onclick="hello()">
+      <div class="c_status_button_box custom-btn btn-10" onclick="hello()">
         <div class="c_status_icon"><i class="fa-regular fa-calendar-minus fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">예약중인 캠페인</div>
@@ -180,7 +235,13 @@
         </div>
       </div>
 
-      <div class="c_status_button_box" onclick="hello()">
+      <div class="c_status_blank_1100"></div>
+
+      <div class="c_status_blank_1100"></div>
+
+
+
+      <div class="c_status_button_box custom-btn btn-10" onclick="hello()">
         <div class="c_status_icon"><i class="fa-solid fa-arrows-rotate fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">진행중인 캠페인</div>
@@ -188,7 +249,7 @@
         </div>
       </div>
 
-      <div class="c_status_button_box" onclick="hello()">
+      <div class="c_status_button_box custom-btn btn-10" onclick="hello()">
         <div class="c_status_icon"><i class="fa-regular fa-flag fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">종료된 캠페인</div>
@@ -235,8 +296,8 @@
 
         <div class="campaign_list_button_group">
 
-          <div class="btn-group">
-            <div class="btn-group-blank"></div>
+          <div class="btn_group">
+            <div class="btn-group-blank1"></div>
             <button>상태</button>
             <button>캠페인</button>
             <button>브랜드</button>
@@ -246,23 +307,65 @@
             <button>예상 타겟 OTS</button>
             <button>생성일</button>
             <button id="last_button">촤종수정일</button>
-            <div class="btn-group-blank"></div>
+            <div class="btn-group-blank2"></div>
           </div>
 
-          
-        <div class="campaign_list_table">
-          캠페인 목록 및 데이터 노출영역
-        </div>
+
+          <div class="campaign_list_table">
+
+            <div class="campaign_list_table_blank"></div>
+
+            <div class="campaign_list_table_main">
+              <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+              <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+            </div>
+
+            <div class="campaign_list_table_blank"></div>
+
+          </div>
 
         </div>
 
 
       </div>
 
-      <footer>
+    </div>
 
 
-      </footer>
+    <!-- footer 페이지 네이션 영역입니다.  -->
+
+    <footer>
+
+      <div class="footer_blank"></div>
+
+
+    <div class="footer_page">
+      <ul class="footer_pagination footer_modal">
+        <li> <a href="#" class="first">처음 페이지</a></li>
+        <li> <a href="#" class="arrow left"><<</a></li>
+        <li> <a href="#" class="active num">1</a></li>
+        <li> <a href="#" class="num">2</a></li>
+        <li> <a href="#" class="num">3</a></li>
+        <li> <a href="#" class="num">4</a></li>
+        <li> <a href="#" class="num">5</a></li>
+        <li> <a href="#" class="num">6</a></li>
+        <li> <a href="#" class="num">7</a></li>
+        <li> <a href="#" class="num">8</a></li>
+        <li> <a href="#" class="num">9</a></li>
+        <li> <a href="#" class="arrow right"> >> </a></li>
+        <li><a href="#" class="last">끝 페이지</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_blank"></div>
+
+
+
+    </footer>
+
+
+
+
 
 
 
@@ -294,7 +397,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/f350009f47.js" crossorigin="anonymous"></script>
-  <script src="js/cp_unauthorized.js"></script>
+  <script src="js/cp_main.js"></script>
   <script src="js/jquery.js"></script>
 
 

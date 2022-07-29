@@ -47,20 +47,47 @@ $(function () {
   })
 });
 
-/* 캠페인 티켓 관련 함수들 */ 
+/* 캠페인 티켓 관련 함수들 */
 
 /* function hello(){
   alert("안녕하세요");
 } */
 
 
-/* 이메일 팝업 열기 함수 */
+/* 배경화면 흐리게 처리 */ 
+function bgLayerOpen() {
+  if (!$('.bgLayer').length) {
+     $('<div class="bgLayer"></div>').appendTo($('body')); 
+    } 
+    var object = $(".bgLayer"); 
+    var w = $(document).width() + 12; 
+    var h = $(document).height();
+    
+    object.css({ 'width': w, 'height': h }); 
+    object.fadeIn(500); //생성되는 시간 설정
+    $('html').css("overflow", "hidden");
+}
+
+function bgLayerClear(){
+  var object = $('.bgLayer');
+  if(object.length) {
+    object.fadeOut(500, function() {
+      object.remove();
+    });
+  }
+  $('html').css("overflow", "scroll");
+}
+
+
+
 
 $(function () {
   //----- OPEN
   $('[data-popup-open]').on('click', function (e) {
     var targeted_popup_class = jQuery(this).attr('data-popup-open');
+
     $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
 
     e.preventDefault();
   });
@@ -68,7 +95,9 @@ $(function () {
   //----- CLOSE
   $('[data-popup-close]').on('click', function (e) {
     var targeted_popup_class = jQuery(this).attr('data-popup-close');
+
     $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
 
     e.preventDefault();
   });
@@ -81,13 +110,13 @@ $(function () {
   //----- OPEN
 
   var $n_button = $('.notice_icon');
-  var $slidedown = $('.slide-down');
+  var $slidedown = $('.slide_down');
 
 
   $n_button.click(function () {
-    //alert("클릭 확인 ");
+    // alert("클릭 확인 ");
 
-    //$slidedown.css("background-color", "#ff0");
+    // $slidedown.css("background-color", "#ff0");
     // 버튼 클릭시 sidebar 색 변경 (연결확인 )
 
     var duration = 300;
@@ -98,8 +127,10 @@ $(function () {
 
     if ($slidedown.hasClass('open')) {
       $slidedown.slideDown(duration);
+      // bgLayerOpen();
     } else {
       $slidedown.slideUp(duration);
+      // bgLayerClear();
     };
 
 
@@ -109,7 +140,8 @@ $(function () {
 });
 
 /* id 표시 관련 함수들 */
-/* $(function () {
+
+$(function () {
 
   var $id_main_button = $('.idstatus_button_main');
   var $id_detail_button = $('.idstatus_button_detail');
@@ -136,4 +168,4 @@ $(function () {
 
 
 
-}); */
+}); 

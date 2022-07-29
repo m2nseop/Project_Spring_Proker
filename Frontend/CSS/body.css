@@ -1,0 +1,21 @@
+:root {
+  --nav_height: 50px;
+  --nav_button_height: 48px;
+}
+
+body {
+  background-color:#F6F6F6; 		
+  font-family: 'Jua', sans-serif;
+
+}
+
+/* 아이콘 컬러 변경 */
+
+.icon_white {
+  color: white;
+}
+
+.icon_gray {
+  color: grey;
+
+}

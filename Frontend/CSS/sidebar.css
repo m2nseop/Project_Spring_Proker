@@ -1,0 +1,27 @@
+/* side 메뉴 속성  */
+
+/* 미디어 쿼리 적용해서 , 각각의 화면 크기별 요소 크기 변경해두기 */
+
+#sidebar {
+  background-color: #00070e;
+  border: 1px solid gray;
+  color: white;
+
+  border-top: 0px;
+
+  width: 15%;
+
+  font-size: 1vw;
+
+  height: calc(100vh - 70px);
+  position: fixed;
+
+  left: -15%;
+
+}
+
+.slist {
+  list-style: none;
+  position: relative;
+  right: 30px;
+}

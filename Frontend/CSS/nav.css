@@ -1,0 +1,162 @@
+/* nav메뉴 속성 모음  - 기초 디자인 */
+
+.nav {
+  color: white;
+  background-color: #00070e;
+  height: var(--nav_height);
+  border: 1px solid gray;
+}
+
+.nav .nav_blank {
+  width: 15%;
+  height: inherit;
+  /* background-color: red; */
+}
+
+.nav .home_button {
+  width: 5%;
+  height: var(--nav_button_height);
+  border-left: 0;
+  border-right: 1px gray solid;
+  background-color: inherit;
+}
+
+.nav .sidemenu_button {
+  width: 5%;
+  height: var(--nav_button_height);
+  border-right: 1px gray solid;
+
+  background-color: inherit;
+}
+
+
+.nav .campaign_plus_button {
+  width: 10%;
+  height: var(--nav_button_height);
+  border-right: 1px gray solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: inherit;
+}
+
+.nav .newcamp {
+  margin-left: 10px;
+}
+
+.nav .campaign_searchbar_box {
+  margin-left: 20px;
+  width: 30%;
+
+}
+
+.nav .campaign_searchbar {
+  width: 50%;
+  margin-top: 5px;
+  height: calc(var(--nav_button_height) - 10px);
+  border: 0;
+  border-radius: 15px;
+  text-indent: 30px;
+
+
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  background-position: 13px left;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+
+
+}
+
+.nav input::placeholder {
+  text-indent: 30px;
+  font-size: 15px;
+}
+
+.nav .email_icon {
+  background-color: inherit;
+  width: 5%;
+  height: var(--nav_button_height);
+  border: 0;
+
+}
+
+
+
+.nav .notice_icon {
+  background-color: inherit;
+  width: 5%;
+  height: var(--nav_button_height);
+  border: 0;
+
+
+}
+
+.nav .idstatus_button_main {
+  color: white;
+  background-color: inherit;
+  width: 10%;
+  height: var(--nav_button_height);
+  border: 0;
+
+
+}
+
+.nav .idstatus_button_open {
+  display: none;
+  height: var(--nav_button_height);
+
+}
+
+.nav .idstatus_button_detail {
+  background-color: #00070e;
+
+
+  width: 10%;
+  height: var(--nav_button_height);
+  margin: 0;
+  border: 1px solid gray;
+
+
+}
+
+.nav .idstatus {
+  background-color: #00070e;
+  color: white;
+
+  width: 100%;
+  height: var(--nav_button_height);
+  border: 1px solid gray;
+
+  float: left;
+
+}
+
+.nav .logout {
+  background-color: #00070e;
+  color: white;
+
+  width: 100%;
+  height: var(--nav_button_height);
+  border: 1px solid gray;
+
+  float: left;
+
+
+}
+
+.nav .member_info {
+  background-color: #00070e;
+  color: white;
+
+  width: 100%;
+  height: var(--nav_button_height);
+  border: 1px solid gray;
+
+  float: left;
+
+
+
+}

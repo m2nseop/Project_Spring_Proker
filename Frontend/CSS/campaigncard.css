@@ -1,0 +1,199 @@
+main {
+  /* background-color: antiquewhite; */
+  width: 70%;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+}
+
+main .campaign_status {
+  width: 100%;
+
+}
+
+
+main .campaign_status .slogan {
+  width: 80%;
+  /* background-color: aquamarine;\ */
+  position: relative;
+  top: 30px;
+  font-size: 1vw;
+  margin-bottom: 30px;
+}
+
+main .campaign_status .slogan_blank {
+  width: 5%;
+  height: 20px;
+  float: left;
+}
+
+
+main .c_status_button_box_collection {
+  width: 100%;
+  /* background-color: blue; */
+  margin-bottom: 35px;
+  height: 100px;
+}
+
+main .c_status_blank {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+}
+
+
+main .c_status_button_box {
+  background-color: white;
+  width: 22.5%;
+  /* width: 45%; */
+  height: 100px;
+  border: 1px solid gray;
+  float: left;
+
+
+}
+
+/* 캠페인 카드 마우스 오버 효과 */
+
+.custom-btn {
+  /* width: 130px; */
+  /* height: 40px; */
+  /* padding: 10px 25px; */
+  /* border: 2px solid #000; */
+  /* font-family: 'Lato', sans-serif; */
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: blue;
+}
+.btn-10:hover:after {
+  background: #0A6EFF;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+/* 캠페인 카드 반응형 미디어 쿼리 모음  */
+
+@media (max-width:1100px){
+  main .c_status_button_box {
+    /* background-color: yellow; */
+    /* width: 22.5%; */
+    width: 45%;
+    height: 100px;
+    border: 1px solid gray;
+    float: left;
+  
+  
+  }
+
+  main .c_status_blank_1100 {
+    width: 5%;
+    /* background-color: black; */
+    height: inherit;
+    float: left;
+  }
+}
+
+@media (max-width:600px){
+
+  main .c_status_button_box {
+    /* background-color: yellow; */
+    /* width: 22.5%; */
+    width: 90%;
+    height: 100px;
+    border: 1px solid gray;
+    
+    float: left;
+  
+  
+  }
+
+  main .c_status_blank {
+    /* background-color: black; */
+    width: 0%;
+    height: inherit;
+    float: left;
+  }
+
+}
+
+
+
+
+main .c_status_icon {
+  /* background-color: red; */
+  height: inherit;
+  width: 40%;
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main .c_status_icon_circle {
+  background-color: antiquewhite;
+  width: 60%;
+  height: calc(width);
+}
+
+
+main .c_status_detail {
+  /* background-color: gray; */
+
+  width: 60%;
+  height: inherit;
+  font-size: 1vw;
+  float: left;
+
+}
+
+
+main .c_status_text {
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+main .c_status_number {
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2vw;
+
+
+}
+
