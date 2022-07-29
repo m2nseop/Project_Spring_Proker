@@ -55,45 +55,6 @@ main .c_status_button_box {
 
 /* 캠페인 카드 마우스 오버 효과 */
 
-.custom-btn {
-  /* width: 130px; */
-  /* height: 40px; */
-  /* padding: 10px 25px; */
-  /* border: 2px solid #000; */
-  /* font-family: 'Lato', sans-serif; */
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-
-
-.btn-10 {
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.btn-10:after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
-  -webkit-transform: scale(.1);
-  transform: scale(.1);
-}
-.btn-10:hover {
-  color: blue;
-}
-.btn-10:hover:after {
-  background: #0A6EFF;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
 
 
 /* 캠페인 카드 반응형 미디어 쿼리 모음  */
