@@ -55,6 +55,18 @@ main .c_status_button_box {
 
 /* 캠페인 카드 마우스 오버 효과 */
 
+.button_effect1 {
+	background-color: #333;
+	border: 2px solid #333;
+	color: black;
+	line-height: 50px;
+}
+.button_effect1:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+
 
 
 /* 캠페인 카드 반응형 미디어 쿼리 모음  */
