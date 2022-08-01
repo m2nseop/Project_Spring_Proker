@@ -5,8 +5,12 @@
 
 body {
   background-color:#F6F6F6; 		
-  font-family: 'Jua', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 
+}
+
+main{
+  
 }
 
 /* 아이콘 컬러 변경 */
@@ -18,4 +22,29 @@ body {
 .icon_gray {
   color: grey;
 
+}
+
+.icon_yellow {
+  color: yellow;
+
+}
+
+
+.icon_green {
+  color: green;
+
+}
+
+
+.icon_red {
+  color: red;
+
+}
+
+.icon_blue{
+  color: #59b1eb;
+}
+
+.icon_black{
+  color: black;
 }

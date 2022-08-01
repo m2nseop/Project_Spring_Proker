@@ -8,13 +8,8 @@ $(function () {
     //alert("클릭 확인 ");
 
 
-
-
-
   })
 });
-
-
 
 
 /* 사이드바 기능 함수 */
@@ -54,24 +49,24 @@ $(function () {
 } */
 
 
-/* 배경화면 흐리게 처리 */ 
+/* 배경화면 흐리게 처리 */
 function bgLayerOpen() {
   if (!$('.bgLayer').length) {
-     $('<div class="bgLayer"></div>').appendTo($('body')); 
-    } 
-    var object = $(".bgLayer"); 
-    var w = $(document).width() + 12; 
-    var h = $(document).height();
-    
-    object.css({ 'width': w, 'height': h }); 
-    object.fadeIn(500); //생성되는 시간 설정
-    $('html').css("overflow", "hidden");
+    $('<div class="bgLayer"></div>').appendTo($('body'));
+  }
+  var object = $(".bgLayer");
+  var w = $(document).width() + 12;
+  var h = $(document).height();
+
+  object.css({ 'width': w, 'height': h });
+  object.fadeIn(500); //생성되는 시간 설정
+  $('html').css("overflow", "hidden");
 }
 
-function bgLayerClear(){
+function bgLayerClear() {
   var object = $('.bgLayer');
-  if(object.length) {
-    object.fadeOut(500, function() {
+  if (object.length) {
+    object.fadeOut(500, function () {
       object.remove();
     });
   }
@@ -168,4 +163,244 @@ $(function () {
 
 
 
-}); 
+});
+
+/* 리스트 / 갤러리 형 변환 함수들  */
+
+
+$(function () {
+  //----- OPEN
+
+  var $gallery_button = $('.change_gallery');
+  var $list_button = $('.change_list');
+
+  var $campaign_area = $('.campaign_list');
+
+  var $campaign_list = $('.campaign_list_bar');
+  var $campaign_gallery = $('.campaign_list_gallery');
+
+  var $footer = $('footer');
+
+
+
+  $gallery_button.click(function () {
+    // alert("클릭 확인 ");
+
+    // $campaign_default.css("background-color", "#ff0");
+    // 버튼 클릭시 sidebar 색 변경 (연결확인 )
+
+
+    $footer.css("display", "none");
+
+
+
+
+
+
+    
+    // $slidedown.css("background-color", "#ff0");
+
+
+
+    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+
+      if ($campaign_area.hasClass('list')) {
+
+        $campaign_gallery.css("display", "block");
+
+  
+        $campaign_list.replaceWith($campaign_gallery);
+
+        $campaign_area.addClass('gallery');
+
+        $campaign_area.removeClass('list');
+  
+  
+      } else if($campaign_area.hasClass('gallery')){
+
+                /*         그대로 유지 */
+      };
+
+
+
+  })
+
+  $list_button.click(function () {
+
+
+    // alert("클릭 확인 ");
+
+    // $campaign_list.css("background-color", "#ff0");
+    // 버튼 클릭시 sidebar 색 변경 (연결확인 )
+
+
+    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+
+
+    $footer.css("display", "block");
+
+
+    if ($campaign_area.hasClass('gallery')) {
+  
+      $campaign_gallery.replaceWith($campaign_list);
+
+      $campaign_area.addClass('list');
+
+      $campaign_area.removeClass('gallery');
+
+
+    } else if($campaign_area.hasClass('list')){
+
+              /*         그대로 유지 */
+    };
+
+  })
+
+});
+
+/* 버튼 hover 효과 모음   */
+
+$(function () {
+
+  var $home_button = $('.home_button');
+  var $sidemenu_button = $('.sidemenu_button');
+  var $email_icon = $('.email_icon');
+  var $notice_icon = $('.notice_icon');
+  var $change_gallery = $('.change_gallery');
+  var $change_list = $('.change_list');
+
+
+
+  $home_button.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $home_button.removeClass('icon_white');
+    $home_button.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $home_button.removeClass('icon_blue');
+    $home_button.addClass('icon_white');
+
+
+  });
+
+  $sidemenu_button.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $sidemenu_button.removeClass('icon_white');
+    $sidemenu_button.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $sidemenu_button.removeClass('icon_blue');
+    $sidemenu_button.addClass('icon_white');
+
+
+  });
+
+  $email_icon.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $email_icon.removeClass('icon_white');
+    $email_icon.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $email_icon.removeClass('icon_blue');
+    $email_icon.addClass('icon_white');
+
+
+  });
+
+  $notice_icon.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $notice_icon.removeClass('icon_white');
+    $notice_icon.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $notice_icon.removeClass('icon_blue');
+    $notice_icon.addClass('icon_white');
+
+
+  });
+
+  $change_gallery.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $change_gallery.removeClass('icon_black');
+    $change_gallery.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $change_gallery.removeClass('icon_blue');
+    $change_gallery.addClass('icon_black');
+
+
+  });
+
+  $change_list.hover(function(){
+
+    // alert("오버 효과 입니다. ");
+
+
+    $change_list.removeClass('icon_black');
+    $change_list.addClass('icon_blue');
+
+
+  }, function(){
+
+    // alert("오버 효과에서 벗어납니다.");
+
+
+    $change_list.removeClass('icon_blue');
+    $change_list.addClass('icon_black');
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+});

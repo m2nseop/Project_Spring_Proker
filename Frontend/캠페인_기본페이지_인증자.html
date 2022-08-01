@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="CSS/campaigncard.css">
   <link rel="stylesheet" href="CSS/campaignlist.css">
   <link rel="stylesheet" href="CSS/footernav.css">
+  <link rel="stylesheet" href="CSS/button.css">
+
 
 
 
@@ -25,6 +27,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 
 
@@ -43,8 +49,8 @@
     <div class="nav_blank"></div>
 
     <!-- 홈 버튼 / 클릭시 홈으로 이동 -->
-    <button class="home_button">
-      <i class="fa-solid fa-house icon_white"></i>
+    <button class="home_button icon_white">
+      <i class="fa-solid fa-house"></i>
     </button>
     <!-- 사이드 메뉴 버튼 / 클릭시 사이드 메뉴 슬라이드-->
     <button class="sidemenu_button icon_white">
@@ -53,8 +59,8 @@
 
     <!-- 캠페인 추가   -->
 
-    <buuton class="campaign_plus_button">
-      <i class="fa-solid fa-circle-plus icon_white"></i>
+    <buuton class="campaign_plus_button button_effect2 icon_white">
+      <i class="fa-solid fa-circle-plus"></i>
       <span class="newcamp">새 캠페인</span>
     </buuton>
 
@@ -80,16 +86,16 @@
 
     <!-- 로그인 버튼 / 클릭시 로그인 상태창과 로그인 디테일 상태창 토글  -->
 
-    <button class="idstatus_button_main"> id 표시 </button>
+    <button class="idstatus_button_main button_effect2"> id 표시 </button>
 
     <div class="idstatus_button_detail idstatus_button_open">
-      <button class="idstatus"> id 표시 </button>
-      <button class="logout">회원정보</button>
-      <button class="member_info">로그아웃</button>
+      <button class="idstatus button_effect2"> id 표시 </button>
+      <button class="logout button_effect2">회원정보</button>
+      <button class="member_info button_effect2">로그아웃</button>
     </div>
 
 
-    <div class="nav_blank"></div>
+    <!-- <div class="nav_blank"></div> -->
 
 
 
@@ -272,14 +278,14 @@
       <div class="slogan_nav"> CAMPAIGN LIST </div>
 
       <div class="campaign_list_nav_button">
-        <button class="change_gallery">
-          <i class="fa-solid fa-border-all icon_gray"></i>
+        <button class="change_gallery icon_black">
+          <i class="fa-solid fa-border-all "></i>
         </button>
       </div>
 
       <div class="campaign_list_nav_button">
-        <button class="change_list">
-          <i class="fa-solid fa-bars icon_gray"></i>
+        <button class="change_list icon_black">
+          <i class="fa-solid fa-bars "></i>
         </button>
       </div>
 
@@ -290,7 +296,7 @@
 
     <!-- 캠페인 리스트 표 -->
 
-    <div class='campaign_list'>
+    <div class='campaign_list list'>
 
       <div class="campaign_list_bar">
 
@@ -298,15 +304,15 @@
 
           <div class="btn_group">
             <div class="btn-group-blank1"></div>
-            <button>상태</button>
-            <button>캠페인</button>
-            <button>브랜드</button>
-            <button>일정</button>
-            <button>예산(원)</button>
-            <button>예상 총 OTS</button>
-            <button>예상 타겟 OTS</button>
-            <button>생성일</button>
-            <button id="last_button">촤종수정일</button>
+            <button class="btn-gradient button_effect2">상태</button>
+            <button class="btn-gradient button_effect2">캠페인</button>
+            <button class="btn-gradient button_effect2">브랜드</button>
+            <button class="btn-gradient button_effect2">일정</button>
+            <button class="btn-gradient button_effect2">예산(원)</button>
+            <button class="btn-gradient button_effect2">예상 총 OTS</button>
+            <button class="btn-gradient button_effect2">예상 타겟 OTS</button>
+            <button class="btn-gradient button_effect2">생성일</button>
+            <button class="btn-gradient button_effect2" id="last_button">촤종수정일</button>
             <div class="btn-group-blank2"></div>
           </div>
 
@@ -316,7 +322,8 @@
             <div class="campaign_list_table_blank"></div>
 
             <div class="campaign_list_table_main">
-              <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+              <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i>
+              </div>
               <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
             </div>
 
@@ -332,6 +339,90 @@
     </div>
 
 
+
+
+    <!-- 갤러리형 페이지 영역입니다 -->
+
+
+
+    <div class="campaign_list_gallery ">
+
+      <div class="campaign_list_gallery_collection">
+        <div class="campaign_list_gallery_bar">
+          <div class="c_list_blank"></div>
+          <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_gray"></i></div>
+          <div class="campaign_list_gallery_title">
+            생성중인 캠페인
+          </div>
+        </div>
+
+        <div class="campaign_list_gallery_content">
+          <i class="fa-solid fa-period"></i>
+          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+          <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+        </div>
+      </div>
+
+
+
+      <div class="campaign_list_gallery_collection">
+        <div class="campaign_list_gallery_bar">
+          <div class="c_list_blank"></div>
+          <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_yellow"></i></div>
+          <div class="campaign_list_gallery_title">
+            생성중인 캠페인
+          </div>
+        </div>
+
+        <div class="campaign_list_gallery_content">
+          <i class="fa-solid fa-period"></i>
+          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+          <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+        </div>
+      </div>
+
+
+
+      <div class="campaign_list_gallery_collection">
+        <div class="campaign_list_gallery_bar">
+          <div class="c_list_blank"></div>
+          <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_green"></i></div>
+          <div class="campaign_list_gallery_title">
+            진행중인 캠페인
+          </div>
+        </div>
+
+        <div class="campaign_list_gallery_content">
+          <i class="fa-solid fa-period"></i>
+          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+          <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+        </div>
+      </div>
+
+
+      <div class="campaign_list_gallery_collection">
+        <div class="campaign_list_gallery_bar">
+          <div class="c_list_blank"></div>
+          <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_red"></i></div>
+          <div class="campaign_list_gallery_title">
+            종료된 캠페인
+          </div>
+        </div>
+
+        <div class="campaign_list_gallery_content">
+          <i class="fa-solid fa-period"></i>
+          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
+          <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+
+
     <!-- footer 페이지 네이션 영역입니다.  -->
 
     <footer>
@@ -339,25 +430,27 @@
       <div class="footer_blank"></div>
 
 
-    <div class="footer_page">
-      <ul class="footer_pagination footer_modal">
-        <li> <a href="#" class="first">처음 페이지</a></li>
-        <li> <a href="#" class="arrow left"><<</a></li>
-        <li> <a href="#" class="active num">1</a></li>
-        <li> <a href="#" class="num">2</a></li>
-        <li> <a href="#" class="num">3</a></li>
-        <li> <a href="#" class="num">4</a></li>
-        <li> <a href="#" class="num">5</a></li>
-        <li> <a href="#" class="num">6</a></li>
-        <li> <a href="#" class="num">7</a></li>
-        <li> <a href="#" class="num">8</a></li>
-        <li> <a href="#" class="num">9</a></li>
-        <li> <a href="#" class="arrow right"> >> </a></li>
-        <li><a href="#" class="last">끝 페이지</a></li>
-      </ul>
-    </div>
+      <div class="footer_page">
+        <ul class="footer_pagination footer_modal">
+          <li> <a href="#" class="first">처음 페이지</a></li>
+          <li> <a href="#" class="arrow left">
+              << </a>
+          </li>
+          <li> <a href="#" class="active num">1</a></li>
+          <li> <a href="#" class="num">2</a></li>
+          <li> <a href="#" class="num">3</a></li>
+          <li> <a href="#" class="num">4</a></li>
+          <li> <a href="#" class="num">5</a></li>
+          <li> <a href="#" class="num">6</a></li>
+          <li> <a href="#" class="num">7</a></li>
+          <li> <a href="#" class="num">8</a></li>
+          <li> <a href="#" class="num">9</a></li>
+          <li> <a href="#" class="arrow right"> >> </a></li>
+          <li><a href="#" class="last">끝 페이지</a></li>
+        </ul>
+      </div>
 
-    <div class="footer_blank"></div>
+      <div class="footer_blank"></div>
 
 
 

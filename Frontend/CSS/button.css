@@ -1,0 +1,42 @@
+/* 7 */
+
+
+.btn-gradient {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  /* position: relative; */
+  border: 1px solid rgba(0,0,0,0.21);
+  border-bottom: 4px solid rgba(0,0,0,0.21);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+
+/* 캠페인 카드 마우스 오버 효과 */
+
+.button_effect1 {
+	background-color: #333;
+	border: 2px solid #333;
+	color: black;
+	line-height: 50px;
+}
+.button_effect1:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+
+.button_effect2 {
+	/* background-color: #333; */
+	/* color: black; */
+}
+.button_effect2:hover {
+	/* background-color: #fff; */
+	/* border-color: #59b1eb; */
+	color: #59b1eb;
+}
+
+
+
