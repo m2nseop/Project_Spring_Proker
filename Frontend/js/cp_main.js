@@ -1,3 +1,32 @@
+/* 갤러리를 기본 디폴트로 호출 */
+
+$().ready(function(){
+
+  //alert("클릭 확인 ");
+
+  var $gallery_button = $('.change_gallery');
+  var $list_button = $('.change_list');
+
+  var $campaign_area = $('.campaign_list');
+
+  var $campaign_list = $('.campaign_list_bar');
+  var $campaign_gallery = $('.campaign_list_gallery');
+
+  var $footer = $('footer');
+
+
+
+  $campaign_gallery.css("display", "block");
+
+  
+  $campaign_list.replaceWith($campaign_gallery);
+
+  $footer.css("display", "none");
+
+
+})
+
+
 /*nav 바 기능 함수들 */
 
 $(function () {
@@ -77,6 +106,11 @@ function bgLayerClear() {
 
 
 $(function () {
+
+  var $s_button = $('.popup_send');
+  var $popup = $('.popup');
+
+
   //----- OPEN
   $('[data-popup-open]').on('click', function (e) {
     var targeted_popup_class = jQuery(this).attr('data-popup-open');
@@ -96,6 +130,25 @@ $(function () {
 
     e.preventDefault();
   });
+
+  //------ 제출 
+
+  $s_button.on('click', function (e) {
+
+  //alert("클릭 확인 ");
+
+
+  $popup.fadeOut(350);
+
+  alert("문의사항이 제출되었습니다.");
+
+
+
+    e.preventDefault();
+
+  });
+
+  
 });
 
 /* 알림 슬라이드 다운 함수 */
@@ -105,6 +158,8 @@ $(function () {
   //----- OPEN
 
   var $n_button = $('.notice_icon');
+  var $x_button = $('.slide_down_headbar_xbutton');
+
   var $slidedown = $('.slide_down');
 
 
@@ -127,6 +182,22 @@ $(function () {
       $slidedown.slideUp(duration);
       // bgLayerClear();
     };
+
+
+
+  })
+
+
+  $x_button.click(function () {
+    // alert("클릭 확인 ");
+
+    var duration = 300;
+
+
+    $slidedown.slideUp(duration);
+
+
+  
 
 
 
@@ -202,7 +273,7 @@ $(function () {
 
 
 
-    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+    // list 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
 
       if ($campaign_area.hasClass('list')) {
 
@@ -257,6 +328,49 @@ $(function () {
   })
 
 });
+
+/* 갤러리 카드 슬라이드 다운 함수 */
+
+
+$(function () {
+  //----- OPEN
+
+  var $n_button = $('.gallery_card_icon_button');
+
+  var $slidedown = $('.gallery_card_slidedown');
+
+
+  $n_button.click(function () {
+    // alert("클릭 확인 ");
+
+    $slidedown.css("background-color", "#ff0");
+    // 버튼 클릭시 sidebar 색 변경 (연결확인 )
+
+    var duration = 300;
+
+    $slidedown.toggleClass('open');
+
+    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+
+    if ($slidedown.hasClass('open')) {
+      $slidedown.slideDown(duration);
+      // bgLayerOpen();
+    } else {
+      $slidedown.slideUp(duration);
+      // bgLayerClear();
+    };
+
+
+
+  })
+
+
+
+
+});
+
+
+
 
 /* 버튼 hover 효과 모음   */
 
