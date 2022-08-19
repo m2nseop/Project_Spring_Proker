@@ -246,6 +246,7 @@ main .slogan_nav {
 
 .gallery_card_icon_button{
   background-color: white;
+  width: 10%;
   border: 0;
 
 }
@@ -259,6 +260,48 @@ main .slogan_nav {
   background-color: gray;
   height: 70px;
 
+
+}
+
+/* 갤러리 카드 슬라이드 다운 */ 
+
+.gallery_card_slidedown{
+  width: 100%;
+  height: 120px;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.gallery_card_slidedown_blank{
+  width: 70%;
+  height: inherit;
+  /* background-color: white; */
+  position: relative;
+  z-index: 1;
+
+
+  /* display: none; */
+  float: left;
+
+}
+
+.gallery_card_content{
+  width: 30%;
+  height: inherit;
+
+  float: left;
+}
+
+.gallery_card_content_button{
+  display: block;
+  /* background-color: red; */
+  height: 30px;
+  font-size: 0.5vw;
+  width: 100%;
+  margin: 0;
+  border: none;
 
 }
 

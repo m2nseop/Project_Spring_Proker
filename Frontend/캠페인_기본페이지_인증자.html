@@ -64,8 +64,17 @@
       <span class="newcamp">새 캠페인</span>
     </buuton>
 
+    <!-- 캠페인 검색-->
+
     <div class="campaign_searchbar_box">
       <input class="campaign_searchbar" type="text" placeholder="캠페인 검색"></input>
+      <div class="campaign_searchbar_slidebox">
+        <div class="searchbar_slidebox_main">
+          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i>
+          </div>
+          <div class="campaign_list_table_main_text"> 검색결과가 존재하지 않습니다. </div>
+        </div>
+      </div>
     </div>
 
 
@@ -225,7 +234,7 @@
 
       <div class="c_status_blank"></div>
 
-      <div class="c_status_button_box button_effect1" onclick="hello()">
+      <div class="c_status_button_box button_effect1" id="loading_button_box" >
         <div class="c_status_icon"><i class="fa-regular fa-pen-to-square fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">생성중인 캠페인</div>
@@ -233,7 +242,7 @@
         </div>
       </div>
 
-      <div class="c_status_button_box button_effect1" onclick="hello()">
+      <div class="c_status_button_box button_effect1" id="reserving_button_box">
         <div class="c_status_icon"><i class="fa-regular fa-calendar-minus fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">예약중인 캠페인</div>
@@ -247,7 +256,7 @@
 
 
 
-      <div class="c_status_button_box button_effect1" onclick="hello()">
+      <div class="c_status_button_box button_effect1" id="ing_button_box">
         <div class="c_status_icon"><i class="fa-solid fa-arrows-rotate fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">진행중인 캠페인</div>
@@ -255,7 +264,7 @@
         </div>
       </div>
 
-      <div class="c_status_button_box button_effect1" onclick="hello()">
+      <div class="c_status_button_box button_effect1" id="end_button_box">
         <div class="c_status_icon"><i class="fa-regular fa-flag fa-2x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">종료된 캠페인</div>
@@ -304,15 +313,15 @@
 
           <div class="btn_group">
             <div class="btn-group-blank1"></div>
-            <button class="btn-gradient button_effect2">상태</button>
-            <button class="btn-gradient button_effect2">캠페인</button>
-            <button class="btn-gradient button_effect2">브랜드</button>
-            <button class="btn-gradient button_effect2">일정</button>
-            <button class="btn-gradient button_effect2">예산(원)</button>
-            <button class="btn-gradient button_effect2">예상 총 OTS</button>
-            <button class="btn-gradient button_effect2">예상 타겟 OTS</button>
-            <button class="btn-gradient button_effect2">생성일</button>
-            <button class="btn-gradient button_effect2" id="last_button">촤종수정일</button>
+            <button class="button_effect2">상태</button>
+            <button class="button_effect2">캠페인</button>
+            <button class="button_effect2">브랜드</button>
+            <button class="button_effect2">일정</button>
+            <button class="button_effect2">예산(원)</button>
+            <button class="button_effect2">예상 총 OTS</button>
+            <button class="button_effect2">예상 타겟 OTS</button>
+            <button class="button_effect2">생성일</button>
+            <button class="button_effect2" id="last_button">촤종수정일</button>
             <div class="btn-group-blank2"></div>
           </div>
 
@@ -345,9 +354,9 @@
 
 
 
-    <div class="campaign_list_gallery ">
+    <div class="campaign_list_gallery">
 
-      <div class="campaign_list_gallery_collection">
+      <div class="campaign_list_gallery_collection" id="gallery_loading">
         <div class="campaign_list_gallery_bar">
           <div class="c_list_blank"></div>
           <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_gray"></i></div>
@@ -357,9 +366,66 @@
         </div>
 
         <div class="campaign_list_gallery_content">
-          <i class="fa-solid fa-period"></i>
-          <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i></div>
-          <div class="campaign_list_table_main_text"> 캠페인이 존재하지 않습니다. </div>
+          <div class="campaign_list_gallery_card">
+            <div class="gallery_card_nav">
+            <div class="gallery_card_slogan"> campaign 01</div>
+            <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i class="fa-solid fa-ellipsis"></i></button></div>
+            
+           <!--  <div class="gallery_card_slidedown">
+              <div class="gallery_card_slidedown_blank"></div>
+              <div class="gallery_card_content">
+                <button class="gallery_card_content_button">캠페인 재개</button>
+                <button class="gallery_card_content_button">캠페인 공유</button>
+                <button class="gallery_card_content_button">캠페인 삭제</button>
+                <button class="gallery_card_content_button">지도 다운로드</button>
+              </div>
+            </div> -->
+
+            </div>
+
+            <div class="gallery_card_map"> 지도 영역</div>
+            <div class="gallery_card_info"> 정보 영역</div>
+
+          </div>
+
+          <div class="campaign_list_gallery_card">
+            <div class="gallery_card_nav">
+              <div class="gallery_card_slogan"> campaign 01</div>
+              <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+
+            </div>
+            <div class="gallery_card_map"> 지도 영역</div>
+            <div class="gallery_card_info"> 정보 영역</div>
+
+
+
+          </div>
+
+
+          <div class="campaign_list_gallery_card">
+            <div class="gallery_card_nav">
+            <div class="gallery_card_slogan"> campaign 01</div>
+            <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i class="fa-solid fa-ellipsis"></i></button></div>
+            </div>
+            <div class="gallery_card_map"> 지도 영역</div>
+            <div class="gallery_card_info"> 정보 영역</div>
+
+          </div>
+
+          <div class="campaign_list_gallery_card">
+            <div class="gallery_card_nav">
+            <div class="gallery_card_slogan"> campaign 01</div>
+            <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i class="fa-solid fa-ellipsis"></i></button></div>
+            </div>
+            <div class="gallery_card_map"> 지도 영역</div>
+            <div class="gallery_card_info"> 정보 영역</div>
+
+          </div>
+
+
+          
+       
         </div>
 
 
@@ -379,11 +445,7 @@
               <li> <a href="#" class="num">3</a></li>
               <li> <a href="#" class="num">4</a></li>
               <li> <a href="#" class="num">5</a></li>
-              <li> <a href="#" class="num">6</a></li>
-              <li> <a href="#" class="num">7</a></li>
-              <li> <a href="#" class="num">8</a></li>
-              <li> <a href="#" class="num">9</a></li>
-              <li> <a href="#" class="arrow right"> >> </a></li>
+               <li> <a href="#" class="arrow right"> >> </a></li>
               <li><a href="#" class="last">끝</a></li>
             </ul>
           </div>
@@ -399,7 +461,7 @@
 
 
 
-      <div class="campaign_list_gallery_collection">
+      <div class="campaign_list_gallery_collection" id="gallery_reserving">
         <div class="campaign_list_gallery_bar">
           <div class="c_list_blank"></div>
           <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_yellow"></i></div>
@@ -430,10 +492,6 @@
               <li> <a href="#" class="num">3</a></li>
               <li> <a href="#" class="num">4</a></li>
               <li> <a href="#" class="num">5</a></li>
-              <li> <a href="#" class="num">6</a></li>
-              <li> <a href="#" class="num">7</a></li>
-              <li> <a href="#" class="num">8</a></li>
-              <li> <a href="#" class="num">9</a></li>
               <li> <a href="#" class="arrow right"> >> </a></li>
               <li><a href="#" class="last">끝</a></li>
             </ul>
@@ -446,7 +504,7 @@
 
 
 
-      <div class="campaign_list_gallery_collection">
+      <div class="campaign_list_gallery_collection" id="gallery_ing">
         <div class="campaign_list_gallery_bar">
           <div class="c_list_blank"></div>
           <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_green"></i></div>
@@ -477,10 +535,6 @@
               <li> <a href="#" class="num">3</a></li>
               <li> <a href="#" class="num">4</a></li>
               <li> <a href="#" class="num">5</a></li>
-              <li> <a href="#" class="num">6</a></li>
-              <li> <a href="#" class="num">7</a></li>
-              <li> <a href="#" class="num">8</a></li>
-              <li> <a href="#" class="num">9</a></li>
               <li> <a href="#" class="arrow right"> >> </a></li>
               <li><a href="#" class="last">끝</a></li>
             </ul>
@@ -492,7 +546,7 @@
       </div>
 
 
-      <div class="campaign_list_gallery_collection">
+      <div class="campaign_list_gallery_collection" id="gallery_end">
         <div class="campaign_list_gallery_bar">
           <div class="c_list_blank"></div>
           <div class="campaign_list_gallery_icon"><i class="fa-solid fa-circle-dot icon_red"></i></div>
@@ -523,10 +577,6 @@
               <li> <a href="#" class="num">3</a></li>
               <li> <a href="#" class="num">4</a></li>
               <li> <a href="#" class="num">5</a></li>
-              <li> <a href="#" class="num">6</a></li>
-              <li> <a href="#" class="num">7</a></li>
-              <li> <a href="#" class="num">8</a></li>
-              <li> <a href="#" class="num">9</a></li>
               <li> <a href="#" class="arrow right"> >> </a></li>
               <li><a href="#" class="last">끝</a></li>
             </ul>
@@ -567,10 +617,6 @@
           <li> <a href="#" class="num">3</a></li>
           <li> <a href="#" class="num">4</a></li>
           <li> <a href="#" class="num">5</a></li>
-          <li> <a href="#" class="num">6</a></li>
-          <li> <a href="#" class="num">7</a></li>
-          <li> <a href="#" class="num">8</a></li>
-          <li> <a href="#" class="num">9</a></li>
           <li> <a href="#" class="arrow right"> >> </a></li>
           <li><a href="#" class="last">끝</a></li>
         </ul>
