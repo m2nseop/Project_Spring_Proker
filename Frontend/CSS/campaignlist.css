@@ -36,10 +36,13 @@ main .slogan_nav {
 
   width: 85%;
   float: left;
-  font-size: 1vw;
+  font-size: 0.7vw;
+  font-weight: bold;
 
 
   margin-top: 20px;
+
+  
 }
 
 .change_gallery {
@@ -237,6 +240,8 @@ main .slogan_nav {
   float: left;
   width: 90%;
   padding-left: 3%;
+
+ 
 }
 
 .gallery_card_icon{

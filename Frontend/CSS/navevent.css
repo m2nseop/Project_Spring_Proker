@@ -1,5 +1,7 @@
 /* 이메일 버튼 팝업 css */
 
+/* 여기서 z인덱스 건드려 보기 */
+
 .popup {
   display: none;
   position: fixed;
@@ -8,12 +10,13 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
+
 }
 
 .popup-inner {
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width: 400px;
+  height: 350px;
   top: 50%;
   left: 50%;
   
@@ -35,30 +38,42 @@
 
 .popup_detail {
   /* background-color: aquamarine; */
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
 
 .popup_h1 {
-  height: 70px;
-  line-height: 70px;
+  height: 50px;
+  line-height: 50px;
+
+  display : flex;
+  justify-content: center;
+  /* align-items : center; */
+  
 
 }
 
 .popup_text {
-  width: 20%;
+  width: 80px;
   height: 40px;
   line-height: 40px;
   display: inline-block;
 
 }
 
+
+
 .popup_input {
-  width: 70%;
+  border: 1px solid black;
+  width: 200px;
   display: inline-block;
 
 
+}
+
+.popup_input::placeholder{
+  text-indent: 5px;
 }
 
 #popup_about {
@@ -73,7 +88,8 @@
 .popup_send {
   margin-left: calc(33%);
   margin-right: calc(33%);
-  width: 30%;
+  width: 33%;
+  margin-bottom: calc(10%);
 }
 
 /* 화면 반투명 처리 */
@@ -100,8 +116,8 @@
   background: #fff;
   color: #000;
 
-  width: 35%;
-  height: 500px;
+  width: 400px;
+  height: 300px;
 
   position: fixed;
 
@@ -115,7 +131,7 @@
 }
 
 .slide_down .content{
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
   margin-bottom: 60px;
 }
 
@@ -171,11 +187,12 @@
 
 .alarm_nav{
   height: 30px;
+  border: 0px;
 }
 
 .alarm_button_box{
   float: left;
-  width: 4%;
+  width: 30px;
 }
 
 .alarm_button{
@@ -190,6 +207,7 @@
   height: inherit;
 }
 
+/*
 .new{
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -208,7 +226,7 @@
 }
 
 .new_alarm_blank{
-  /* background-color: #000; */
+  background-color: #000;
   width: 80%;
   height: inherit;
   float: left;
@@ -231,3 +249,4 @@
   height: 50px;
   line-height: 50px;
 }
+*/

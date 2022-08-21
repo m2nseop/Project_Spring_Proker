@@ -46,7 +46,6 @@
     <!-- 상단 네비게이션 바 영역 시작 -->
 
 
-    <div class="nav_blank"></div>
 
     <!-- 홈 버튼 / 클릭시 홈으로 이동 -->
     <button class="home_button icon_white">
@@ -59,6 +58,9 @@
 
     <!-- 캠페인 추가   -->
 
+    <!-- <div class="nav_blank1"></div> -->
+
+
     <buuton class="campaign_plus_button button_effect2 icon_white">
       <i class="fa-solid fa-circle-plus"></i>
       <span class="newcamp">새 캠페인</span>
@@ -68,6 +70,7 @@
 
     <div class="campaign_searchbar_box">
       <input class="campaign_searchbar" type="text" placeholder="캠페인 검색"></input>
+
       <div class="campaign_searchbar_slidebox">
         <div class="searchbar_slidebox_main">
           <div class="campaign_list_table_main_icon"><i class="fa-regular fa-circle-xmark fa-2x icon_gray"></i>
@@ -76,6 +79,10 @@
         </div>
       </div>
     </div>
+
+    <div class="nav_blank2"></div>
+
+
 
 
     <!-- 이메일 버튼 / 클릭시 문의 창 팝업   -->
@@ -95,12 +102,12 @@
 
     <!-- 로그인 버튼 / 클릭시 로그인 상태창과 로그인 디테일 상태창 토글  -->
 
-    <button class="idstatus_button_main button_effect2"> id 표시 </button>
+    <button class="idstatus_button_main"> id 표시 </button>
 
     <div class="idstatus_button_detail idstatus_button_open">
-      <button class="idstatus button_effect2"> id 표시 </button>
-      <button class="logout button_effect2">회원정보</button>
-      <button class="member_info button_effect2">로그아웃</button>
+      <button class="idstatus"> id 표시 </button>
+      <button class="logout">회원정보</button>
+      <button class="member_info">로그아웃</button>
     </div>
 
 
@@ -116,7 +123,7 @@
         <div class="slide_down_headbar">
           <div class="slide_down_headbar_text">알림</div>
           <div class="slide_down_headbar_blank"></div>
-          <button class="slide_down_headbar_xbutton"><i class="fa-regular fa-circle-xmark"></i></button>
+          <button class="slide_down_headbar_xbutton"><i class="fa-solid fa-x"></i></button>
         </div>
 
         <div class="alarm_title"> 알림 타이틀 </div>
@@ -125,9 +132,9 @@
 
         <div class="alarm_nav">
           <div class="alarm_blank"></div>
-          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-regular fa-circle-down"></button></i>
+          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-solid fa-circle-arrow-left"></i></button>
           </div>
-          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-regular fa-circle-up"></button></i>
+          <div class="alarm_button_box"><button class="alarm_button"><i class="fa-solid fa-circle-arrow-right"></i></button>
           </div>
           <div class="alarm_blank"></div>
           <div></div>
@@ -135,7 +142,7 @@
 
       </div>
 
-      <div class="new">
+     <!--  <div class="new">
 
         <div class="new_body">
           <div class="new_alarm_text">알림</div>
@@ -146,7 +153,7 @@
 
         <div class="new_content"> 새로운 알림이 없습니다. </div>
 
-      </div>
+      </div> -->
 
     </div>
 
@@ -165,9 +172,9 @@
   <div class="popup" data-popup="example">
     <div class="popup-inner">
       <div class="popup-contents">
-        <a class="popup-close" data-popup-close="example" href="#">X</a> <!-- 팝업 닫기 버튼입니다 -->
         <div class="popup_detail">
           <div class="popup_h1">문의하기</div>
+          <a class="popup-close" data-popup-close="example" href="#">  <i class="fa-solid fa-x"></i></a> <!-- 팝업 닫기 버튼입니다 -->
           <div class="popup_block">
             <p class="popup_text">ID(이메일)</p> <input class="popup_input" type="text" placeholder="id를 입력해주세요"></input>
           </div>
@@ -234,16 +241,16 @@
 
       <div class="c_status_blank"></div>
 
-      <div class="c_status_button_box button_effect1" id="loading_button_box" >
-        <div class="c_status_icon"><i class="fa-regular fa-pen-to-square fa-2x"></i></div>
+      <div class="c_status_button_box" id="loading_button_box" >
+        <div class="c_status_icon"><i class="fa-regular fa-pen-to-square fa-3x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">생성중인 캠페인</div>
           <div class="c_status_number"> 0 </div>
         </div>
       </div>
 
-      <div class="c_status_button_box button_effect1" id="reserving_button_box">
-        <div class="c_status_icon"><i class="fa-regular fa-calendar-minus fa-2x"></i></div>
+      <div class="c_status_button_box " id="reserving_button_box">
+        <div class="c_status_icon"><i class="fa-regular fa-calendar-minus fa-3x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">예약중인 캠페인</div>
           <div class="c_status_number"> 0 </div>
@@ -256,16 +263,16 @@
 
 
 
-      <div class="c_status_button_box button_effect1" id="ing_button_box">
-        <div class="c_status_icon"><i class="fa-solid fa-arrows-rotate fa-2x"></i></div>
+      <div class="c_status_button_box " id="ing_button_box">
+        <div class="c_status_icon"><i class="fa-solid fa-arrows-rotate fa-3x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">진행중인 캠페인</div>
           <div class="c_status_number"> 0 </div>
         </div>
       </div>
 
-      <div class="c_status_button_box button_effect1" id="end_button_box">
-        <div class="c_status_icon"><i class="fa-regular fa-flag fa-2x"></i></div>
+      <div class="c_status_button_box " id="end_button_box">
+        <div class="c_status_icon"><i class="fa-regular fa-flag fa-3x"></i></div>
         <div class="c_status_detail" id="applying_button">
           <div class="c_status_text">종료된 캠페인</div>
           <div class="c_status_number"> 0 </div>
@@ -313,15 +320,15 @@
 
           <div class="btn_group">
             <div class="btn-group-blank1"></div>
-            <button class="button_effect2">상태</button>
-            <button class="button_effect2">캠페인</button>
-            <button class="button_effect2">브랜드</button>
-            <button class="button_effect2">일정</button>
-            <button class="button_effect2">예산(원)</button>
-            <button class="button_effect2">예상 총 OTS</button>
-            <button class="button_effect2">예상 타겟 OTS</button>
-            <button class="button_effect2">생성일</button>
-            <button class="button_effect2" id="last_button">촤종수정일</button>
+            <button class="">상태</button>
+            <button class="">캠페인</button>
+            <button class="">브랜드</button>
+            <button class="">일정</button>
+            <button class="">예산(원)</button>
+            <button class="">예상 총 OTS</button>
+            <button class="">예상 타겟 OTS</button>
+            <button class="">생성일</button>
+            <button class="" id="last_button">촤종수정일</button>
             <div class="btn-group-blank2"></div>
           </div>
 

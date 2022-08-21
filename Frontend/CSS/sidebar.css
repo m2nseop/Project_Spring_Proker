@@ -3,20 +3,20 @@
 /* 미디어 쿼리 적용해서 , 각각의 화면 크기별 요소 크기 변경해두기 */
 
 #sidebar {
-  background-color: #00070e;
-  border: 1px solid gray;
-  color: white;
+  /* background-color: #7c7c79; */
+  background-color: #8f9194;
 
-  border-top: 1px solid gray;
+
+  color: white;
 
   width: 15%;
 
   font-size: 1vw;
 
-  margin-top: var(--nav_button_height);
+  margin-top: var(--nav_height);
 
 
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   position: fixed;
 
   left: -15%;
