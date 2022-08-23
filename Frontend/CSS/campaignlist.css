@@ -165,7 +165,20 @@ main .slogan_nav {
 
   margin-bottom: 50px;
 
-  color:gray;
+  color: white;
+
+  
+}
+
+.campaign_list_table_main_text2{
+  height: 150px;
+  /* background-color: red; */
+
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  color: gray;
 
   
 }
@@ -182,11 +195,9 @@ main .slogan_nav {
 }
 
 .campaign_list_gallery_icon{
-  width: 3%;
+  width: 2.5%;
   float: left;
   height: calc(inherit/70);
-
-
 
 }
 
@@ -207,11 +218,17 @@ main .slogan_nav {
   /* background-color: white; */
   width: 90%;
   margin: auto;
-  height: 300px;
+  height: 350px;
 
 
 
 
+}
+
+.gallery_content_empty{
+  background-color: #c0bcbf;
+
+  height: 250px;
 }
 
 /* ======================================================================================================================================================== */
@@ -222,12 +239,14 @@ main .slogan_nav {
 .campaign_list_gallery_card{
   background-color: white;
   
-  margin-right: 1%;
+  margin-right: 2%;
 
   float: left;
 
-  height: inherit;
-  width: 24%;
+  height: 400px;
+  width: 31%;
+
+  margin-bottom: 60px;
   
 
 }
@@ -257,17 +276,42 @@ main .slogan_nav {
 }
 
 .gallery_card_map{
-  background-color: orange;
+  /* background-color: orange; */
+  height: 200px;
+}
+
+.gallery_card_mapimg{
+  width: 100%;
   height: 200px;
 }
 
 .gallery_card_info{
-  background-color: gray;
-  height: 70px;
+  /* background-color: gray; */
+  height: 100px;
+
+  margin-top: 30px;
 
 
 }
 
+.gallery_card_info_table_l{
+  width: 50%;
+  float: left;
+  height: 25px;
+
+  border-bottom: 1px solid black;
+}
+
+.gallery_card_info_table_r{
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid black;
+  height: 25px;
+
+
+
+
+}
 /* 갤러리 카드 슬라이드 다운 */ 
 
 .gallery_card_slidedown{
@@ -322,9 +366,17 @@ main .slogan_nav {
   
     float: left;
   
-    height: inherit;
+    height: 400px;
     width: 48%;
   
+  
+  }
+
+
+  .campaign_list_gallery_icon{
+    width: 3.5%;
+    float: left;
+    height: calc(inherit/70);
   
   }
 
@@ -339,9 +391,16 @@ main .slogan_nav {
   
     float: left;
   
-    height: inherit;
+    height: 400px;
     width: 100%;
   
+  
+  }
+
+  .campaign_list_gallery_icon{
+    width: 6%;
+    float: left;
+    height: calc(inherit/70);
   
   }
 

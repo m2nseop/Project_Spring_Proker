@@ -11,6 +11,8 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
 
+  z-index: 10;
+  
 }
 
 .popup-inner {
@@ -24,7 +26,7 @@
   padding: 10px;
   background: #fff;
   
-  z-index: 2;
+  z-index: 10;
 
 }
 
@@ -116,17 +118,20 @@
   background: #fff;
   color: #000;
 
-  width: 400px;
+  width: 500px;
   height: 300px;
 
-  position: fixed;
 
   border: 1px solid gray;
 
-  top: 50px;
+  position: fixed;
+
+  z-index: 100;
+
+
+  top: 48px;
   right: 0%;
   
-  z-index: 1;
 
 }
 
@@ -145,7 +150,9 @@
   
   width: 10%;
   float: left;
+  display: flex;
   text-align: center;
+
 }
 
 .slide_down_headbar_blank{
@@ -206,6 +213,9 @@
   width: 46%;
   height: inherit;
 }
+
+
+/*** 슬라이드 다운 완료 ***/ 
 
 /*
 .new{

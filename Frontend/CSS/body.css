@@ -6,10 +6,14 @@
 body {
   background-color:#F6F6F6; 		
   font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  z-index: -2;
 
 }
 
 main{
+  position: relative;
+  z-index: -2;
   
 }
 
@@ -47,4 +51,8 @@ main{
 
 .icon_black{
   color: black;
+}
+
+.text_white{
+  color: white;
 }

@@ -1,8 +1,10 @@
-.btn:active, .btn:focus, .btn::after{
+.btn:active,
+.btn:focus,
+.btn::after {
 	border: none;
 	box-shadow: none;
 	cursor: default;
-	outline:none;
+	outline: none;
 
 }
 
@@ -13,7 +15,7 @@
   padding: 10px 30px;
   display: inline-block;
   /* position: relative; */
-  /* border: 1px solid rgba(0,0,0,0.21); 
+/* border: 1px solid rgba(0,0,0,0.21); 
   border-bottom: 4px solid rgba(0,0,0,0.21);
   border-radius: 4px;
   text-shadow: 0 1px 0 rgba(0,0,0,0.15);
@@ -27,6 +29,7 @@
 	color: black;
 	line-height: 50px;
 }
+
 .button_effect1:hover {
 	background-color: #fff;
 	border-color: #59b1eb;
@@ -37,11 +40,113 @@
 	/* background-color: #333; */
 	/* color: black; */
 }
+
 .button_effect2:hover {
 	/* background-color: #fff; */
 	/* border-color: #59b1eb; */
 	color: #59b1eb;
 }
 
+
+.btn_1 {
+	/* position: relative; */
+
+	/* box-sizing: border-box; */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	/* border: 2px solid #e74c3c; */
+	/* border-radius: 0.6em; */
+	/* color: #e74c3c; */
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 400;
+	/* line-height: 1; */
+	/* margin: 20px; */
+	/* padding: 1.2em 2.8em; */
+	text-decoration: none;
+	/* text-align: center; */
+	text-transform: uppercase;
+	/* font-family: "Montserrat", sans-serif; */
+	/* font-weight: 700; */
+	margin: 0;
+
+	/* z-index: -100; */
+	/* transform: translateZ(-1); */
+
+}
+
+.btn_1:hover,
+.btn_1:focus {
+	color: #fff;
+	outline: 0;
+
+}
+
+.first {
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+}
+
+.first:hover {
+	box-shadow: 0 0 40px 40px skyblue inset;
+	transform: translateY(-10px);
+
+
+}
+
+
+/* 호버효과 모음 */
+
+@-webkit-keyframes hover {
+	50% {
+		transform: translateY(-3px);
+
+	}
+
+	100% {
+		transform: translateY(-6px);
+
+	}
+}
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+
+	}
+
+	100% {
+		transform: translateY(-6px);
+
+	}
+}
+
+.hover {
+	display: inline-block;
+	transition-duration: 0.5s;
+	transition-property: transform;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hover:hover {
+	transform: translateY(-6px);
+	-webkit-animation-name: hover;
+	animation-name: hover;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
 
 
