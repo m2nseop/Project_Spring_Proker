@@ -148,10 +148,14 @@
 
 .slide_down_headbar_text {
   
-  width: 10%;
+  width: 90%;
   float: left;
   display: flex;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
