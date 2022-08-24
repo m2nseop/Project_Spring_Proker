@@ -179,6 +179,11 @@ main .c_status_number {
     padding-bottom: 35px;
   
   }
+
+  main #end_button_box{
+    border-top-right-radius: 0px;
+  
+  }
   
 }
 
@@ -216,6 +221,11 @@ main .c_status_number {
     font-size: 4vw;
   
     padding-bottom: 35px;
+  
+  }
+
+  main #end_button_box{
+    border-top-right-radius: 0px;
   
   }
 

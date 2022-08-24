@@ -48,11 +48,11 @@
 
 
     <!-- 홈 버튼 / 클릭시 홈으로 이동 -->
-    <button class="home_button icon_white">
+    <button class="home_button icon_white btn_no">
       <i class="fa-solid fa-house"></i>
     </button>
     <!-- 사이드 메뉴 버튼 / 클릭시 사이드 메뉴 슬라이드-->
-    <button class="sidemenu_button icon_white">
+    <button class="sidemenu_button icon_white btn_no">
       <i class="fa-solid fa-list"></i>
     </button>
 
@@ -61,7 +61,7 @@
     <!-- <div class="nav_blank1"></div> -->
 
 
-    <buuton class="campaign_plus_button button_effect2 icon_white">
+    <buuton class="campaign_plus_button button_effect2 icon_white btn_no">
       <i class="fa-solid fa-circle-plus"></i>
       <span class="newcamp">새 캠페인</span>
     </buuton>
@@ -87,14 +87,14 @@
 
     <!-- 이메일 버튼 / 클릭시 문의 창 팝업   -->
 
-    <button class="email_icon icon_white" href="#" data-popup-open="example">
+    <button class="email_icon icon_white btn_no" href="#" data-popup-open="example">
       <i class="fa-solid fa-square-envelope"></i>
     </button>
 
 
     <!-- 알림 버튼 / 클릭시 알림 창 슬라이드 다운  -->
 
-    <button class="notice_icon icon_white">
+    <button class="notice_icon icon_white btn_no">
       <i class="fa-solid fa-bell"></i>
     </button>
 
@@ -102,12 +102,12 @@
 
     <!-- 로그인 버튼 / 클릭시 로그인 상태창과 로그인 디테일 상태창 토글  -->
 
-    <button class="idstatus_button_main"> id 표시 </button>
+    <button class="idstatus_button_main btn_no"> id 표시 </button>
 
     <div class="idstatus_button_detail idstatus_button_open">
-      <button class="idstatus"> <i class="fa-solid fa-id-badge"></i> </button>
-      <button class="logout"><i class="fa-solid fa-id-card"></i></button>
-      <button class="member_info"><i class="fa-solid fa-right-from-bracket"></i></button>
+      <button class="idstatus btn_no"> id 표시</button>
+      <button class="logout btn_no"> 회원정보</button>
+      <button class="member_info btn_no">로그아웃</button>
     </div>
 
 
@@ -269,18 +269,25 @@
 
       <div class="c_list_blank"></div>
 
-      <div class="slogan_nav"> CAMPAIGN LIST </div>
+      <div class="campaign_list_nav_content">
 
-      <div class="campaign_list_nav_button">
-        <button class="change_gallery icon_black">
-          <i class="fa-solid fa-border-all "></i>
-        </button>
-      </div>
+        <div class="slogan_nav"> CAMPAIGN LIST </div>
 
-      <div class="campaign_list_nav_button">
-        <button class="change_list icon_black">
-          <i class="fa-solid fa-bars "></i>
-        </button>
+        <div class="c_list_content_blank_2"></div>
+
+
+        <div class="campaign_list_nav_button">
+          <button class="change_gallery icon_black btn_no">
+            <i class="fa-solid fa-border-all "></i>
+          </button>
+        </div>
+
+        <div class="campaign_list_nav_button ">
+          <button class="change_list icon_black btn_no">
+            <i class="fa-solid fa-bars "></i>
+          </button>
+        </div>
+
       </div>
 
       <div class="c_list_blank_2"></div>
@@ -298,15 +305,15 @@
 
           <div class="btn_group">
             <div class="btn-group-blank1"></div>
-            <button class="">상태</button>
-            <button class="">캠페인</button>
-            <button class="">브랜드</button>
-            <button class="">일정</button>
-            <button class="">예산(원)</button>
-            <button class="">예상 총 OTS</button>
-            <button class="">예상 타겟 OTS</button>
-            <button class="">생성일</button>
-            <button class="" id="last_button">촤종수정일</button>
+            <button class="btn_no_2">상태</button>
+            <button class="btn_no_2">캠페인</button>
+            <button class="btn_no_2">브랜드</button>
+            <button class="btn_no_2">일정</button>
+            <button class="btn_no_2">예산(원)</button>
+            <button class="btn_no_2">예상 총 OTS</button>
+            <button class="btn_no_2">예상 타겟 OTS</button>
+            <button class="btn_no_2">생성일</button>
+            <button class="btn_no_2" id="last_button">촤종수정일</button>
             <div class="btn-group-blank2"></div>
           </div>
 
@@ -378,10 +385,22 @@
 
             <div class="gallery_card_map"><img src="img/map01.png" class="gallery_card_mapimg"></div>
             <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 예산 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 30000000000</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 미디어수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 372</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 총 OTS수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 293334646</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 타겟 OTS </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 5646468548</div>
 
             </div>
 
@@ -397,10 +416,22 @@
             </div>
             <div class="gallery_card_map"><img src="img/map02.png" class="gallery_card_mapimg"></div>
             <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 예산 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 30000000000</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 미디어수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 372</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 총 OTS수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 293334646</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 타겟 OTS </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 5646468548</div>
 
             </div>
 
@@ -416,65 +447,32 @@
             </div>
             <div class="gallery_card_map"><img src="img/map03.png" class="gallery_card_mapimg"></div>
             <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 예산 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 30000000000</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">총 미디어수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 372</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 총 OTS수 </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 293334646</div>
+              <div class="gallery_card_info_table_l">
+                <p class="info_content">예상 타겟 OTS </p>
+              </div>
+              <div class="gallery_card_info_table_r"> 5646468548</div>
 
             </div>
 
           </div>
 
-          <div class="campaign_list_gallery_card">
-            <div class="gallery_card_nav">
-              <div class="gallery_card_slogan"> campaign 04</div>
-              <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i
-                    class="fa-solid fa-ellipsis"></i></button></div>
-            </div>
-            <div class="gallery_card_map"><img src="img/map04.png" class="gallery_card_mapimg"></div>
-            <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
 
-            </div>
 
-          </div>
 
-          <div class="campaign_list_gallery_card">
-            <div class="gallery_card_nav">
-              <div class="gallery_card_slogan"> campaign 05</div>
-              <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i
-                    class="fa-solid fa-ellipsis"></i></button></div>
-            </div>
-            <div class="gallery_card_map"><img src="img/map04.png" class="gallery_card_mapimg"></div>
-            <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
 
-            </div>
 
-          </div>
-
-          <div class="campaign_list_gallery_card">
-            <div class="gallery_card_nav">
-              <div class="gallery_card_slogan"> campaign 06</div>
-              <div class="gallery_card_icon"> <button class="gallery_card_icon_button"><i
-                    class="fa-solid fa-ellipsis"></i></button></div>
-            </div>
-            <div class="gallery_card_map"><img src="img/map04.png" class="gallery_card_mapimg"></div>
-            <div class="gallery_card_info">
-              <div class="gallery_card_info_table_l"> 총 예산 </div> <div class="gallery_card_info_table_r"> 30000000000</div>
-              <div class="gallery_card_info_table_l"> 총 미디어수 </div> <div class="gallery_card_info_table_r"> 372</div>
-              <div class="gallery_card_info_table_l"> 예상 총 OTS수 </div> <div class="gallery_card_info_table_r"> 293334646</div>
-              <div class="gallery_card_info_table_l"> 예상 타겟 OTS </div> <div class="gallery_card_info_table_r"> 5646468548</div>
-
-            </div>
-
-          </div>
 
 
 
@@ -697,17 +695,21 @@
             <a class="popup-close" data-popup-close="example" href="#"> <i class="fa-solid fa-x"></i></a>
             <!-- 팝업 닫기 버튼입니다 -->
             <div class="popup_block">
-              <p class="popup_text">ID(이메일)</p> <input class="popup_input" type="text" placeholder="id를 입력해주세요"></input>
+              <div class="popup_text">ID(이메일)</div>
+              <div><input class="popup_input" type="text" placeholder="id를 입력해주세요"></input></div>
             </div>
             <div class="popup_block">
-              <p class="popup_text">제목</p> <input class="popup_input" type="text" placeholder="제목을 입력해주세요"></input>
+              <div class="popup_text">제목</div>
+              <div><input class="popup_input" type="text" placeholder="제목을 입력해주세요"></input></div>
             </div>
-            <div class="popup_block">
-              <p class="popup_text" id="popup_about_t">내용</p> <textarea class="popup_input" id="popup_about" type="text"
-                placeholder="문의 내용을 입력해주세요"></textarea>
+            <div class="popup_block_about">
+              <div class="popup_text_about">내용</div>
+              <div><textarea class="popup_input_about" type="text" placeholder="내용을 입력해주세요"></textarea></div>
             </div>
 
-            <button class="popup_send">확인</button>
+            <div class="popup_send_box">
+              <button class="popup_send btn_no_2">보내기</button>
+            </div>
           </div>
         </div>
       </div>

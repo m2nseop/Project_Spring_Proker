@@ -1,11 +1,48 @@
-.btn:active,
-.btn:focus,
-.btn::after {
+button:active,
+button:focus,
+button::after {
 	border: none;
 	box-shadow: none;
 	cursor: default;
 	outline: none;
 
+} 
+
+.btn_no{
+	
+}
+.btn_no:active,
+.btn_no:focus,
+.btn_no::after {
+	border: none;
+	box-shadow: none;
+	cursor: default;
+	outline: none;
+
+}
+
+.btn_no_2{
+}
+
+.btn_no_2:active,
+.btn_no_2:focus,
+.btn_no_2::after {
+	border: 1px solid gray;
+	box-shadow: none;
+	cursor: default;
+	outline: none;
+
+
+}
+
+
+
+
+
+
+.button_noline{
+	border: 0;
+	outline: 0;
 }
 
 

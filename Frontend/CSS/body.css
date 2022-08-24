@@ -8,6 +8,10 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   position: relative;
   z-index: -2;
+  min-width: 600px;
+  width: auto !important;
+  width: 1000px;
+
 
 }
 

@@ -6,35 +6,33 @@ main .campaign_list_nav {
 
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  /* border-bottom: 1px solid gray; */
+
+
+}
+
+main .campaign_list_nav_content{
+
+  float: left;
+  width: 90%;
+  /* height: inherit; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   border-bottom: 1px solid gray;
 
 
-}
 
-main .c_list_blank {
-  /* background-color: black; */
-  width: 5%;
-  height: inherit;
-  float: left;
-  background-color:#F6F6F6; 		
-  margin-top: 1px;
 }
-
-main .c_list_blank_2 {
-  /* background-color: black; */
-  width: 6%;
-  height: inherit;
-  float: left;
-  background-color:#F6F6F6; 		
-  margin-top: 1px;
-}
-
-/* 상단 캠페인 리스트 슬로건과 2개 버튼 영역  */
 
 main .slogan_nav {
 
-  width: 85%;
+  width: 94%;
   float: left;
   font-size: 0.7vw;
   font-weight: bold;
@@ -44,6 +42,43 @@ main .slogan_nav {
 
   
 }
+
+main .campaign_list_nav_button{
+
+  width: 2%;
+  min-width: 23px;
+
+
+  float: left;
+
+
+}
+
+main .c_list_content_blank_2{
+
+}
+
+main .c_list_blank {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+  /* background-color:#F6F6F6; 		 */
+  margin-top: 1px;
+}
+
+main .c_list_blank_2 {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+  /* background-color:#F6F6F6; 		 */
+  margin-top: 1px;
+}
+
+/* 상단 캠페인 리스트 슬로건과 2개 버튼 영역  */
+
+
 
 .change_gallery {
 
@@ -92,11 +127,12 @@ main .slogan_nav {
 .btn_group button {
   background-color: #dcdcdc;
   border: 1px solid grey;
-  color: black;
+  /* color: black; */
   width: 10%;
   height: inherit;
   font-size: 0.65vw;
   float: left;
+  /* border-right: 1px solid gray; */
 }
 
 .btn_group #last_button {
@@ -105,7 +141,7 @@ main .slogan_nav {
 }
 
 .btn_group button:not(:last-child) {
-  border-right: none;
+  /* border-right: none; */
 }
 
 
@@ -243,16 +279,22 @@ main .slogan_nav {
 
   float: left;
 
-  height: 400px;
+  height: 350px;
   width: 31%;
 
-  margin-bottom: 60px;
-  
+  margin-bottom: 15px;
+
+  border-top-right-radius: 15px;
+
+  /* border: 1px solid black; */
 
 }
 
 .gallery_card_nav{
   height: 30px;
+
+  border-top-right-radius: 15px;
+
 }
 
 .gallery_card_slogan{
@@ -265,6 +307,8 @@ main .slogan_nav {
 
 .gallery_card_icon{
   background-color: white;
+  border-top-right-radius: 15px;
+
 
 }
 
@@ -272,6 +316,8 @@ main .slogan_nav {
   background-color: white;
   width: 10%;
   border: 0;
+  border-top-right-radius: 15px;
+
 
 }
 
@@ -302,7 +348,12 @@ main .slogan_nav {
   border-bottom: 1px solid black;
 }
 
+.info_content{
+  margin-left: 5%;
+}
+
 .gallery_card_info_table_r{
+
   width: 50%;
   float: left;
   border-bottom: 1px solid black;
@@ -312,6 +363,13 @@ main .slogan_nav {
 
 
 }
+
+.gallery_card_1100_blank{
+  display: none;
+  
+}
+
+
 /* 갤러리 카드 슬라이드 다운 */ 
 
 .gallery_card_slidedown{
@@ -361,16 +419,22 @@ main .slogan_nav {
 @media (max-width:1100px){
   .campaign_list_gallery_card {
     background-color: white;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
   
-    margin-right: 2%;
   
     float: left;
   
     height: 400px;
-    width: 48%;
+    width: 70%;
   
   
   }
+
+  
+  
 
 
   .campaign_list_gallery_icon{
@@ -382,6 +446,8 @@ main .slogan_nav {
 
 }
 
+
+ 
 @media (max-width:600px){
 
   .campaign_list_gallery_card {
@@ -392,6 +458,9 @@ main .slogan_nav {
     float: left;
   
     height: 400px;
+
+    margin-left: 0%;
+
     width: 100%;
   
   
