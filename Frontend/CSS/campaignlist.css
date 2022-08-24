@@ -6,35 +6,28 @@ main .campaign_list_nav {
 
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  /* border-bottom: 1px solid gray; */
+
+
+}
+
+main .campaign_list_nav_content{
+
+  float: left;
+  width: 90%;
+  height: inherit;
 
   border-bottom: 1px solid gray;
 
 
-}
 
-main .c_list_blank {
-  /* background-color: black; */
-  width: 5%;
-  height: inherit;
-  float: left;
-  background-color:#F6F6F6; 		
-  margin-top: 1px;
 }
-
-main .c_list_blank_2 {
-  /* background-color: black; */
-  width: 6%;
-  height: inherit;
-  float: left;
-  background-color:#F6F6F6; 		
-  margin-top: 1px;
-}
-
-/* 상단 캠페인 리스트 슬로건과 2개 버튼 영역  */
 
 main .slogan_nav {
 
-  width: 85%;
+  width: 93%;
   float: left;
   font-size: 0.7vw;
   font-weight: bold;
@@ -44,6 +37,42 @@ main .slogan_nav {
 
   
 }
+
+main .campaign_list_nav_button{
+
+  width: 3%;
+
+
+  float: left;
+
+
+}
+
+main .c_list_content_blank_2{
+
+}
+
+main .c_list_blank {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+  /* background-color:#F6F6F6; 		 */
+  margin-top: 1px;
+}
+
+main .c_list_blank_2 {
+  /* background-color: black; */
+  width: 5%;
+  height: inherit;
+  float: left;
+  /* background-color:#F6F6F6; 		 */
+  margin-top: 1px;
+}
+
+/* 상단 캠페인 리스트 슬로건과 2개 버튼 영역  */
+
+
 
 .change_gallery {
 
