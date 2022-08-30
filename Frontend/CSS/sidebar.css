@@ -4,27 +4,214 @@
 
 #sidebar {
   /* background-color: #7c7c79; */
-  background-color: #8f9194;
+  background-color: #00070e;
 
 
   color: white;
 
   width: 15%;
+  /* left: -15%; */
+
 
   font-size: 1vw;
 
   margin-top: var(--nav_height);
 
+  border: none;
+
 
   height: calc(100vh);
   position: fixed;
 
-  left: -15%;
 
+  /* min-width: 300px; */
+
+  
+
+}
+
+.sidebar_menu_box{
+  height: calc(100vh/20);
+
+  width: 100%;
+
+}
+
+
+
+.sidebar_menu{
+
+  height: calc(100vh/20);
+
+  
+
+  width: 70%;
+
+  margin: 0;
+
+
+
+  
+
+  float: left;
+
+  border-bottom: 1px solid gray;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items : center;
+
+}
+
+.sidebar_menu_blank{
+
+  float: left;
+
+  width: 10%;
+
+  height: inherit;
+
+  border-bottom: 1px solid gray;
+
+}
+
+.sidebar_menu_blank2{
+  float: left;
+
+  width: 20%;
+
+  height: inherit;
+
+  border-bottom: 1px solid gray;
+}
+
+#slidemenu{
+  width: 100%;
+}
+
+.menu_icon{
+  margin-right: 4%;
+}
+
+.sidebar_menu_text{
+  display: flex;
+  justify-content: center;
+  align-items : center;
+
+  float: left;
+}
+
+.sidebar_menu_buttonbox{
+
+  margin: 0;
+
+
+  height: calc(100vh/20);
+
+  width: 20%;
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items : center;
+
+  border-bottom: 1px solid gray;
+
+}
+
+.sidebar_menu_button{
+  background-color: inherit;
+
+  /* border: 1px solid gray; */
+
+  width: 100%;
 }
 
 .slist {
   list-style: none;
   position: relative;
   right: 30px;
+}
+
+#menu01{
+ 
+
+}
+
+/* 미디어 쿼리로  min-width 적용하기 -> js 파일도 손보기 */ 
+
+@media (max-width:1100px){
+  
+  #sidebar {
+   
+  
+    font-size: 1vw;
+
+    
+  
+  }
+
+
+
+
+
+ 
+
+}
+
+
+ 
+@media (max-width:600px){
+
+  #sidebar {
+   
+  
+    font-size: 1vw;
+
+  
+    
+  
+  }
+
+  .sidebar_menu{
+
+    font-size: 0.6vw;
+
+    width: 70%;
+
+   
+  
+  }
+
+  .sidebar_menu_text{
+    font-size: 0vw;
+  }
+
+
+}
+
+@media (max-width:400px){
+
+  #sidebar {
+
+    font-size: 0.6vw;
+
+   
+  
+  
+
+  
+    
+  
+  }
+
+  .sidebar_menu{
+
+    font-size: 0.4vw;
+
+    width: 65%;
+
+   
+  
+  }
 }

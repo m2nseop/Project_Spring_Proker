@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="CSS/navevent.css">
   <link rel="stylesheet" href="CSS/campaigncard.css">
   <link rel="stylesheet" href="CSS/campaignlist.css">
+  <link rel="stylesheet" href="CSS/campaignlist_gallery.css">
   <link rel="stylesheet" href="CSS/footernav.css">
   <link rel="stylesheet" href="CSS/button.css">
 
@@ -172,11 +173,9 @@
 
 
 
-  <!-- 사이드 메뉴 입니다. -->
+  <!-- 사이드 메뉴 입니다. --------------------------------------------------------------------------------------->
 
-
-  <div id="sidebar">
-    <ul class="slist">
+  <!--  <ul class="slist">
       <li> BACKEND
         <ul class="slist">
           <li>SERVER</li>
@@ -196,8 +195,132 @@
       <li>JS</li>
       </li>
       <li>ETC</li>
-    </ul>
+    </ul> -->
+
+
+  <div id="sidebar">
+
+
+
+    <div class="sidebar_menu_box" >
+      <div class="sidebar_menu_blank"></div>
+
+
+      <div class="sidebar_menu" id="menu01">
+
+        <i class="fa-solid fa-database menu_icon"></i>
+        <div class="sidebar_menu_text">
+          BACKEND
+        </div>
+      </div>
+      <div class="sidebar_menu_buttonbox">
+        <button class="sidebar_menu_button" id="">
+          <i class="fa-solid fa-chevron-down icon_white"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="sidebar_slidedown" id="sidebar_slidedown_backend">
+      <div class="sidebar_menu" id="slidemenu">
+        <div class="sidebar_menu_blank2"></div>
+        <i class="fa-solid fa-server menu_icon"></i>
+          <div class="sidebar_menu_text">
+          SERVER
+        </div>
+      </div>
+      <div class="sidebar_menu" id="slidemenu">
+        <div class="sidebar_menu_blank2"></div>
+
+        <i class="fa-solid fa-database menu_icon"></i>
+        <div class="sidebar_menu_text">
+          DATABASE
+        </div>
+      </div>
+      <div class="sidebar_menu" id="slidemenu">
+        <div class="sidebar_menu_blank2"></div>
+
+        <i class="fa-solid fa-server menu_icon"></i>
+        <div class="sidebar_menu_text">
+          SERVER-SIDE
+        </div>
+      </div>
+      <div class="sidebar_menu" id="slidemenu">
+        <div class="sidebar_menu_blank2"></div>
+
+        <i class="fa-solid fa-mobile-screen-button menu_icon"></i>
+          <div class="sidebar_menu_text">
+          MOBILE
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="sidebar_menu_box" >
+
+      <div class="sidebar_menu_blank"></div>
+
+      <div class="sidebar_menu" id="menu01">
+
+        <i class="fa-brands fa-html5 menu_icon"></i>
+        <div class="sidebar_menu_text">
+          FRONTEND
+        </div>
+      </div>
+      <div class="sidebar_menu_buttonbox">
+        <button class="sidebar_menu_button" class>
+          <i class="fa-solid fa-chevron-down icon_white"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="sidebar_menu_box" >
+      <div class="sidebar_menu_blank"></div>
+
+      <div class="sidebar_menu" id="menu01">
+
+        <i class="fa-brands fa-js menu_icon"></i>
+        <div class="sidebar_menu_text">
+          JS
+        </div>
+      </div>
+      <div class="sidebar_menu_buttonbox">
+        <button class="sidebar_menu_button" class>
+          <i class="fa-solid fa-chevron-down icon_white"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="sidebar_menu_box" >
+      <div class="sidebar_menu_blank"></div>
+
+      <div class="sidebar_menu" id="menu01">
+
+        <i class="fa-solid fa-bookmark menu_icon"></i>
+        <div class="sidebar_menu_text">
+          ETC
+        </div>
+      </div>
+      <div class="sidebar_menu_buttonbox">
+        <button class="sidebar_menu_button" class>
+          <i class="fa-solid fa-chevron-down icon_white"></i>
+        </button>
+      </div>
+    </div>
+
+
+
   </div>
+
+
+  <!---------------사이드 메뉴 영역 끝 --------------------------------------------------------------- -->
+
+
 
   <!-- 상단 네비게이션 바 영역 끝  -->
 
@@ -305,15 +428,15 @@
 
           <div class="btn_group">
             <div class="btn-group-blank1"></div>
-            <button class="btn_no_2">상태</button>
+            <button class="btn_no_2">캠페인 상태</button>
             <button class="btn_no_2">캠페인</button>
-            <button class="btn_no_2">브랜드</button>
+            <button class="btn_no_2">캠페인 카테고리</button>
             <button class="btn_no_2">일정</button>
-            <button class="btn_no_2">예산(원)</button>
-            <button class="btn_no_2">예상 총 OTS</button>
-            <button class="btn_no_2">예상 타겟 OTS</button>
-            <button class="btn_no_2">생성일</button>
-            <button class="btn_no_2" id="last_button">촤종수정일</button>
+            <button class="btn_no_2">금액</button>
+            <button class="btn_no_2">조회 수</button>
+            <button class="btn_no_2">캠페인 분류</button>
+            <button class="btn_no_2">신청자 수</button>
+            <button class="btn_no_2" id="last_button">생성일</button>
             <div class="btn-group-blank2"></div>
           </div>
 
