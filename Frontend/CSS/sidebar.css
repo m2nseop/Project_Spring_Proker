@@ -10,7 +10,7 @@
   color: white;
 
   width: 15%;
-  /* left: -15%; */
+  left: -15%;
 
 
   font-size: 1vw;
@@ -133,6 +133,11 @@
   right: 30px;
 }
 
+.sidebar_slidedown{
+  display: none;
+
+}
+
 #menu01{
  
 
@@ -184,7 +189,7 @@
   }
 
   .sidebar_menu_text{
-    font-size: 0vw;
+    font-size: 0.2vw;
   }
 
 
