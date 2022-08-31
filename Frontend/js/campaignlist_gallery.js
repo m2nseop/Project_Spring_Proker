@@ -251,12 +251,12 @@ $(function () {
 $(function () {
   //----- OPEN
 
-  var $n_button = $('.gallery_card_icon_button');
+  var $n_button1 = $('#gallery_card_icon_button01');
 
-  var $slidedown = $('.gallery_card_slidedown');
+  var $slidedown1 = $('#gallery_slidedown_01');
 
 
-  $n_button.click(function () {
+  $n_button1.click(function () {
     // alert("클릭 확인 ");
 
     // $slidedown.css("background-color", "#ff0");
@@ -264,15 +264,15 @@ $(function () {
 
     var duration = 300;
 
-    $slidedown.toggleClass('open');
+    $slidedown1.toggleClass('open');
 
     // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
 
-    if ($slidedown.hasClass('open')) {
-      $slidedown.slideDown(duration);
+    if ($slidedown1.hasClass('open')) {
+      $slidedown1.slideDown(duration);
       // bgLayerOpen();
     } else {
-      $slidedown.slideUp(duration);
+      $slidedown1.slideUp(duration);
       // bgLayerClear();
     };
 
@@ -284,5 +284,83 @@ $(function () {
 
 
 });
+
+
+$(function () {
+  //----- OPEN
+
+  var $n_button1 = $('#gallery_card_icon_button02');
+
+  var $slidedown1 = $('#gallery_slidedown_02');
+
+
+  $n_button1.click(function () {
+    // alert("클릭 확인 ");
+
+    // $slidedown.css("background-color", "#ff0");
+    // 버튼 클릭시 sidebar 색 변경 (연결확인 )
+
+    var duration = 300;
+
+    $slidedown1.toggleClass('open');
+
+    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+
+    if ($slidedown1.hasClass('open')) {
+      $slidedown1.slideDown(duration);
+      // bgLayerOpen();
+    } else {
+      $slidedown1.slideUp(duration);
+      // bgLayerClear();
+    };
+
+
+
+  })
+
+
+
+
+});
+
+
+$(function () {
+  //----- OPEN
+
+  var $n_button1 = $('#gallery_card_icon_button03');
+
+  var $slidedown1 = $('#gallery_slidedown_03');
+
+
+  $n_button1.click(function () {
+    // alert("클릭 확인 ");
+
+    // $slidedown.css("background-color", "#ff0");
+    // 버튼 클릭시 sidebar 색 변경 (연결확인 )
+
+    var duration = 300;
+
+    $slidedown1.toggleClass('open');
+
+    // open 클래스가 없으면 추가하고, 있으면 빼버립니다. ( 작동확인 완료 )
+
+    if ($slidedown1.hasClass('open')) {
+      $slidedown1.slideDown(duration);
+      // bgLayerOpen();
+    } else {
+      $slidedown1.slideUp(duration);
+      // bgLayerClear();
+    };
+
+
+
+  })
+
+
+
+
+});
+
+
 
  
