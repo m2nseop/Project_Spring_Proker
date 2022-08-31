@@ -1,0 +1,47 @@
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://d3js.org/d3.v5.min.js"></script>
+  
+  <script type="text/javascript">
+  d3.csv("data.csv").then(function(data){
+        var sortstate = true;          
+        var title = d3.keys(data[0]); 
+  
+        var table = d3.select('body').append('table')
+                       .attr("class","table");
+        var thead = table.append('thead');
+        var tbody = table.append('tbody');
+  
+        var header = thead.append('tr')
+                         .selectAll('th')
+                         .data(title).enter()
+                         .append('th')
+                         .text(function (d) {return d;})
+                         .on('click', function (d) {
+                           sortstate = !sortstate;
+                           rows.sort(function(a,b){
+                             if(isNaN(a[d])){
+                               if (sortstate) return b[d] > a[d]; 
+                               else return a[d] > b[d];
+                             }else{
+                               if (sortstate) return b[d] - a[d]; 
+                               else return a[d] - b[d];
+                             }
+                           });
+                         });
+       var rows = tbody.selectAll('tr').data(data)
+                       .enter()
+                       .append('tr');
+  
+       var cells =  rows.selectAll('td')
+                        .data(function (d) {
+                                 return title.map(function (title) {
+                                       return { 'title': title, 'value': d[title]};
+                                 });
+                        })
+                        .enter()
+                        .append('td')
+                        .text(function (d) { return d.value;});
+  });
+  </script>
+  </body>

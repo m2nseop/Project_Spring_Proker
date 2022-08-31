@@ -51,7 +51,7 @@ $(function () {
 
 
 
-  $s_button1.click(function () {
+  $s_button1.on('click', function (e) {
     // alert("클릭 확인 ");
 
     // $icon1.css("background-color", "#ff0");
@@ -84,6 +84,9 @@ $(function () {
       $icon1.addClass('fa-chevron-down');
     };
 
+    e.preventDefault();
+
+
 
   })
 
@@ -109,13 +112,13 @@ $(function () {
 
 
 
-  $s_button2.click(function () {
+  $s_button2.on('click', function (e)  {
     // alert("클릭 확인 ");
 
     // $icon1.css("background-color", "#ff0");
     // 버튼 클릭시 sidebar 색 변경 (연결확인 )
 
-    var duration = 300;
+    var duration2 = 300;
 
     $slidedown2.toggleClass('open2');
 
@@ -127,10 +130,10 @@ $(function () {
 
 
     if ($slidedown2.hasClass('open2')) {
-      $slidedown2.slideDown(duration);
+      $slidedown2.slideDown(duration2);
       // bgLayerOpen();
     } else {
-      $slidedown2.slideUp(duration);
+      $slidedown2.slideUp(duration2);
       // bgLayerClear();
     };
 
@@ -145,6 +148,10 @@ $(function () {
     };
 
 
+    e.preventDefault();
+
+
+
 
 
   })
@@ -156,6 +163,58 @@ $(function () {
 
 
 /* 검색창 구현 */ 
+
+$(function () {
+
+  var $cp_searchbar = $('.campaign_searchbar');
+  var $cp_slidebox = $('.campaign_searchbar_slidebox');
+
+  
+
+
+  $cp_searchbar.on("propertychange change paste input", function() {
+
+    $cp_slidebox.slideDown(0);
+
+
+    if (!$cp_searchbar.val()) {
+      // alert('칸이 비어있습니다.');
+
+      $cp_slidebox.css("display", "none");
+
+  }
+
+      // alert("감지 확인 ");
+
+
+    
+ });
+
+
+});
+
+// 검색창 필터 
+
+
+function filter(){
+  
+  var value, name, item, i;
+
+  value = document.getElementById("value").value.toUpperCase();
+  
+  item = document.getElementsByClassName("item");
+
+  for(i=0;i<item.length;i++){
+    name = item[i].getElementsByClassName("name");
+    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      item[i].style.display = "flex";
+    }else{
+      item[i].style.display = "none";
+      // item[i].style.fontsize = 0;
+
+    }
+  }
+}
 
 
 

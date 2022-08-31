@@ -293,11 +293,15 @@ main .c_list_blank_2 {
 
 .tg th {
 
-  border: solid 1px grey;
+  /* border: solid 1px grey; */
+
+  border-bottom: solid 1px grey;
   font-size: 0.65vw;
   font-weight: normal;
   overflow: hidden;
   word-break: normal;
+
+  border-right: solid 0px grey;
 }
 
 
@@ -306,6 +310,8 @@ th{
   height: 48px;
 
   text-align: center;
+
+
 
 }
 
@@ -316,13 +322,18 @@ thead{
 thead th{
 
   background-color: #dcdcdc;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   width: 11.1%;
   font-size: 0.65vw;
   height: 50px;
   text-align: center;
 
+
+
+
   margin: 0;
+
+
 
 
 }
