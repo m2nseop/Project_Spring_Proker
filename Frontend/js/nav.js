@@ -197,6 +197,9 @@ $(function () {
   var $cp_searchbar = $('.campaign_searchbar');
   var $cp_slidebox = $('.campaign_searchbar_slidebox');
 
+  var $main = $('main');
+
+
 
 
 
@@ -216,6 +219,18 @@ $(function () {
 
 
 
+  });
+
+  $main.on("click", function (e) {
+    // alert("eeee");
+
+    $cp_slidebox.css("display", "none");
+
+    
+
+
+
+    
   });
 
 
