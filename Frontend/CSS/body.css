@@ -16,6 +16,9 @@ body {
 }
 
 main{
+
+  height: 100vw;
+
   position: relative;
   z-index: -2;
   

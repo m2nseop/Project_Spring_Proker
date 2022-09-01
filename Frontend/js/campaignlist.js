@@ -201,6 +201,7 @@ $(function () {
   var value2 = '예약중'
   var value3 = '진행중'
   var value4 =  '종료'
+  var value5 = '1'
 
   // 테이블 영역 
 
@@ -255,7 +256,7 @@ $(function () {
 
     $("#table_body tr").filter(function() { // 생성중인 테이블만 보여줘 
 
-      $(this).toggle($(this).text().toLowerCase().indexOf(value1) > -1) // 일치하는 글자 있으면
+      $(this).toggle($(this).text().toLowerCase().indexOf(value5) > -1) // 일치하는 글자 있으면
 
 
 
@@ -305,6 +306,14 @@ $(function () {
     }
   }
   else if(status_reserving==1){
+
+    $("#table_body tr").filter(function() { // 생성중인 테이블만 보여줘 
+
+      $(this).toggle($(this).text().toLowerCase().indexOf(value5) > -1) // 일치하는 글자 있으면
+
+
+
+    });
     
    
     status_reserving=0;
@@ -345,6 +354,14 @@ $(function () {
     }
   }
   else if(status_ing==1){
+
+    $("#table_body tr").filter(function() { // 생성중인 테이블만 보여줘 
+
+      $(this).toggle($(this).text().toLowerCase().indexOf(value5) > -1) // 일치하는 글자 있으면
+
+
+
+    });
     
     
 
@@ -385,6 +402,16 @@ $(function () {
     }
   }
   else if(status_end==1){
+
+    $("#table_body tr").filter(function() { // 생성중인 테이블만 보여줘 
+
+      $(this).toggle($(this).text().toLowerCase().indexOf(value5) > -1) // 일치하는 글자 있으면
+
+
+
+    });
+
+    
 
     
     
