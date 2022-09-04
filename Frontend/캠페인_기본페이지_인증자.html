@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="CSS/campaignlist_gallery.css">
   <link rel="stylesheet" href="CSS/footernav.css">
   <link rel="stylesheet" href="CSS/button.css">
+  
+  <link rel="stylesheet" href="CSS/design.css">
+
 
 
 
@@ -141,7 +144,7 @@
 
     <!-- 이메일 버튼 / 클릭시 문의 창 팝업   -->
 
-    <button class="email_icon icon_white btn_no" href="#" data-popup-open="example">
+    <button class="email_icon icon_white btn_no" data-toggle="modal" data-target="#inquireModal"  href="#" data-popup-open="example">
       <i class="fa-solid fa-square-envelope"></i>
     </button>
 
@@ -330,17 +333,13 @@
         </div>
       </div>
 
-
-
-
-
     </div>
 
 
     <div class="sidebar_menu_box">
       <div class="sidebar_menu_blank"></div>
 
-      <div class="sidebar_menu" id="menu01">
+      <div class="sidebar_menu" id="">
 
         <i class="fa-brands fa-js menu_icon"></i>
         <div class="sidebar_menu_text">
@@ -354,6 +353,15 @@
       </div>
     </div>
 
+
+    
+
+
+
+
+    
+
+    
 
     <div class="sidebar_menu_box">
       <div class="sidebar_menu_blank"></div>
@@ -371,6 +379,9 @@
         </button>
       </div>
     </div>
+
+
+    
 
 
 
@@ -1050,13 +1061,12 @@
 
 
   <!-- 표출되는 이메일 팝업 입니다. -->
-  <div class="popup" data-popup="example">
+ <!--  <div class="popup" data-popup="example">
     <div class="popup-inner">
       <div class="popup-contents">
         <div class="popup_detail">
           <div class="popup_h1">문의하기</div>
           <a class="popup-close" data-popup-close="example" href="#"> <i class="fa-solid fa-x"></i></a>
-          <!-- 팝업 닫기 버튼입니다 -->
           <div class="popup_block">
             <div class="popup_text">ID(이메일)</div>
             <div><input class="popup_input" type="text" placeholder="id를 입력해주세요"></input></div>
@@ -1076,10 +1086,60 @@
         </div>
       </div>
     </div>
+  </div> 
+
+-->
+
+
+  <!-- 문의하기 modal -->
+
+  <div class="modal fade" id="inquireModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="inquireModalLabel" aria-modal="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content no-border-radius">
+        <div class="modal-header no-border-bottom">
+          <h2 class="modal-title mx-auto fw-bold" id="inquireModalLabel">문의하기</h2>
+        </div>
+        <div class="modal-body">
+          <form action="/inquire?_csrf=f834082d-db43-4482-a3e3-5e33c2280677" method="post" name="inquireForm">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">ID(이메일)</p>
+              </div>
+              <div class="col-10 form-group">
+                  <input type="email" class="form-control no-border-radius border-color-primary" id="inq-email" name="email" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">제목</p>
+              </div>
+              <div class="col-10 form-group">
+                <input type="text" class="form-control no-border-radius border-color-primary" id="inq-title" name="title" aria-describedby="titleHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">내용</p>
+              </div>
+              <div class="col-10 form-group">
+                <textarea class="form-control no-border-radius border-color-primary" id="inq-contents" name="contents" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer no-border-top">
+          <div class="w-50 mx-auto mb-3">
+          <!-- <div class="mx-auto"> -->
+            <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-secondary bg-secondary w-45 btn-no-radius float-left">닫기</button>
+            <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary w-45 btn-no-radius float-right">보내기</button>
+            <!-- <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary btn-no-radius float-right" style="width: 90px">확인</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-
 
 
 
@@ -1110,6 +1170,10 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/map.js"></script>
+
+
 
 
   

@@ -113,6 +113,14 @@ $(function () {
     };
 
     e.preventDefault();
+    e.stopPropagation();
+
+
+    $s_button1.stop(clearQueue);
+
+    
+
+    
 
 
 
@@ -123,6 +131,8 @@ $(function () {
 
 
 });
+
+
 
 $(function () {
   //----- OPEN
@@ -177,6 +187,10 @@ $(function () {
 
 
     e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+
 
 
 
@@ -184,7 +198,7 @@ $(function () {
 
   })
 
-
+  
 
 
 });
@@ -326,12 +340,13 @@ function bgLayerClear() {
 }
 
 
+/* 문의하기 모달 팝업 함수 */
 
 
-$(function () {
+/* $(function () {
 
   var $s_button = $('.popup_send');
-  var $popup = $('.popup');
+  var $popup = $('#inquireModal');
 
 
   //----- OPEN
@@ -372,7 +387,7 @@ $(function () {
   });
 
 
-});
+}); */
 
 /* 알림 슬라이드 다운 함수 */
 
