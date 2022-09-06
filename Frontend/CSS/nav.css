@@ -93,6 +93,9 @@
 
 .nav .campaign_searchbar::placeholder{
 
+  text-indent: 30px;
+  font-size: 16px;
+
   /* color: aqua; */
 }
 

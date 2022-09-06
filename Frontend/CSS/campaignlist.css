@@ -31,13 +31,14 @@ main .campaign_list_nav_content {
 
 main .slogan_nav {
 
-  width: 94%;
+  width: 100%;
   float: left;
   font-size: 0.7vw;
   font-weight: bold;
 
 
   margin-top: 20px;
+  margin-left: 0;
 
 
 }
