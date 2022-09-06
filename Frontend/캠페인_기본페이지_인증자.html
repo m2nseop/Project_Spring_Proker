@@ -354,14 +354,7 @@
     </div>
 
 
-    
-
-
-
-
-    
-
-    
+      
 
     <div class="sidebar_menu_box">
       <div class="sidebar_menu_blank"></div>
@@ -385,6 +378,57 @@
 
 
 
+  </div>
+
+
+   <!-- 문의하기 modal -->
+
+   <div class="modal fade" id="inquireModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="inquireModalLabel" aria-modal="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content no-border-radius">
+        <div class="modal-header no-border-bottom">
+          <h2 class="modal-title mx-auto fw-bold" id="inquireModalLabel">문의하기</h2>
+        </div>
+        <div class="modal-body">
+          <form action="/inquire?_csrf=f834082d-db43-4482-a3e3-5e33c2280677" method="post" name="inquireForm">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">ID(이메일)</p>
+              </div>
+              <div class="col-10 form-group">
+                  <input type="email" class="form-control no-border-radius border-color-primary" id="inq-email" name="email" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">제목</p>
+              </div>
+              <div class="col-10 form-group">
+                <input type="text" class="form-control no-border-radius border-color-primary" id="inq-title" name="title" aria-describedby="titleHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 no-padding-right">
+                <p class="inquire-p">내용</p>
+              </div>
+              <div class="col-10 form-group">
+                <textarea class="form-control no-border-radius border-color-primary" id="inq-contents" name="contents" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer no-border-top">
+          <div class="w-50 mx-auto mb-3">
+          <!-- <div class="mx-auto"> -->
+            <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-secondary bg-secondary w-45 btn-no-radius float-left">닫기</button>
+            <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary w-45 btn-no-radius float-right">보내기</button>
+            <!-- <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary btn-no-radius float-right" style="width: 90px">확인</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -1091,55 +1135,7 @@
 -->
 
 
-  <!-- 문의하기 modal -->
-
-  <div class="modal fade" id="inquireModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="inquireModalLabel" aria-modal="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content no-border-radius">
-        <div class="modal-header no-border-bottom">
-          <h2 class="modal-title mx-auto fw-bold" id="inquireModalLabel">문의하기</h2>
-        </div>
-        <div class="modal-body">
-          <form action="/inquire?_csrf=f834082d-db43-4482-a3e3-5e33c2280677" method="post" name="inquireForm">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-2 no-padding-right">
-                <p class="inquire-p">ID(이메일)</p>
-              </div>
-              <div class="col-10 form-group">
-                  <input type="email" class="form-control no-border-radius border-color-primary" id="inq-email" name="email" aria-describedby="emailHelp">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 no-padding-right">
-                <p class="inquire-p">제목</p>
-              </div>
-              <div class="col-10 form-group">
-                <input type="text" class="form-control no-border-radius border-color-primary" id="inq-title" name="title" aria-describedby="titleHelp">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 no-padding-right">
-                <p class="inquire-p">내용</p>
-              </div>
-              <div class="col-10 form-group">
-                <textarea class="form-control no-border-radius border-color-primary" id="inq-contents" name="contents" rows="5"></textarea>
-              </div>
-            </div>
-          </div>
-          </form>
-        </div>
-        <div class="modal-footer no-border-top">
-          <div class="w-50 mx-auto mb-3">
-          <!-- <div class="mx-auto"> -->
-            <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-secondary bg-secondary w-45 btn-no-radius float-left">닫기</button>
-            <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary w-45 btn-no-radius float-right">보내기</button>
-            <!-- <button type="button" id="inquireSubmit" class="btn btn-primary bg-primary btn-no-radius float-right" style="width: 90px">확인</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
 
 
